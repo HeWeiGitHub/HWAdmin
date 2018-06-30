@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Spring Boot 集成Mybatis 测试例子</title> 
+</head> 
+<body> 
+<h1>Spring Boot 集成Mybatis 测试例子</h1> 
+<table>
+<%
+for(message in messages){
+%>
+	<tr>
+    <td>${message.id}</td>
+    <td>${message.nickName}</td>
+    <td>${message.ip}</td>
+    <td>${message.insertTime}</td>
+    </tr>
+<%
+}
+%>
+</table>
+</body>
+ </html>

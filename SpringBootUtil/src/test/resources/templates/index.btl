@@ -1,0 +1,4 @@
+a
+<%for(u in list){%>
+<p>${u.name}</p>
+<%}%>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hw.dao.myBatis.MessageMapper">
+	<resultMap id="message_map" type="hw.model.Message">
+		<id property="id" column="ID" jdbcType="INTEGER"></id>
+		<result property="ip" column="IP" jdbcType="VARCHAR"></result>
+		<result property="insertTime" column="INSERT_TIME" jdbcType="DATE"></result>
+		<result property="nickName" column="NICK_NAME" jdbcType="VARCHAR"></result>
+	</resultMap>
+	<!--可重用的SQL代码段-->  
+    <sql id="column">id,nick_name,ip,insert_time</sql> 
+     
+    <!-- <select id="listPage" parameterType="String" resultType="hashmap"> -->  
+    <select id="listPage" parameterType="String" resultMap="message_map">  
+        select <include refid="column"/> from message where nick_name = #{name}  
+    </select>
+	<select id="findMessageInfo" resultMap="message_map">
+		select * from message
+	</select>
+</mapper>
