@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+<!--经常会遇到一种情况就是一个div下面放了两个div，这两个div使用了float浮动后，父层div的高度不跟着两个子div的高度变化，始终是一个字符的高度。
+造成这种情况的原因是两个子div使用了float浮动属性，解决方法有两种：
+1、给父层div加overflow:auto;属性即可
+2.新建一个.clear{ clear:both}类，在kid2div下面加入<div class="clear"></div>清除一下浮动即可-->
+        
+        <div style="border: 3px solid red;width: 1000px;">
+			<div style="height: 50px;width:500px;border: 1px solid blue;"></div>
+			<div style="height: 50px;width:500px;border: 1px solid blue;"></div>
+		</div>
+		
+		<div style="border: 3px solid red;width: 1000px;margin-top: 100px;">
+			<div style="height: 50px;width:498px;border: 1px solid blue;float: left;"></div>
+			<div style="height: 50px;width:498px;border: 1px solid blue;float: left;"></div>
+		</div>
+		
+		<!--父层添加overflow:auto;-->
+		<div style="border: 3px solid red;width: 1000px;margin-top: 100px;overflow:auto;">
+			<div style="height: 50px;width:498px;border: 1px solid blue;float: left;"></div>
+			<div style="height: 50px;width:498px;border: 1px solid blue;float: left;"></div>
+		</div>
+		
+		<div style="border: 3px solid red;width: 1000px;margin-top: 100px;">
+			<div style="height: 50px;width:498px;border: 1px solid blue;float: left;"></div>
+			<div style="height: 50px;width:498px;border: 1px solid blue;float: left;"></div>
+			<!--清除浮动-->
+			<div style="clear: both;"></div>
+		</div>
+		
+		
+	</body>
+</html>

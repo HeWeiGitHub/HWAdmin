@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<script src="js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="js/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<script src="js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="css/index.css" />
+		<!--
+        	<link rel="stylesheet" href="css/base.css" />
+			<link rel="stylesheet" href="css/common.css" />
+        -->
+		
+		
+		
+		<script>
+			
+			$(function()
+			{
+				var city;
+				$("#area").bind("mouseenter",function()
+				{
+					
+					city=window.open("indexarea.html","选择城市","top=200px,left=400px,width=200px,height=100px");
+					$("#areaico").src="";
+				});
+				$("#area").bind("mouseleave",function()
+				{
+					$("#areaico").src="";
+					city.close();
+				});
+			})
+		</script>
+		
+		<script>
+			
+			$(function()
+			{
+				var searbut;
+				//searbut=$("input[type='submit']");
+				$("input[type='submit']").bind("mousemove",function(event)
+				{
+					$("this").addClass("btnactivbg");
+				});
+				
+			})
+		</script>
+		
+		<script type="text/javascript">
+			$(
+				function()
+				{
+					//$("#titleBar a:first").state("active");
+					//$("#titleBar a:first").attr("autofocus","ture");
+					//$("#titleBar a:first").setActive();
+					$("#titleBar a").bind("click",function(){
+						$("#titleBar a").removeClass("current");
+						$(this).addClass("current");
+					})
+				}
+			)
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<div id="top">
+			<form id="topForm">
+				<div id="top_logo"><img src="img/logo.bmp"/></div>
+				<div id="top_location">
+					<center>
+					
+					<select>
+						<option>全国</option>
+						<option>银川</option>
+					</select>
+					
+					<!--
+					<span id="area"><font style="font-family: '微软雅黑';">选择城市</font><img src=""/></span>
+					-->
+					</center>
+				</div>
+				<div id="top_search">
+					<input type="text" placeholder="请输入品牌或型号，如奥迪A6L"/>
+					<input type="submit" value="搜索" class="fwhiteBlod"/>
+				</div>
+				<div id="top_user">
+					<!--
+                    	
+                    
+					<span class="glyphicon glyphicon-user fleft"></span>
+					-->
+					<img src="img/person2.png" />
+					<a href="login.html" class="me" style="color: rgb(0,0,0);">登录</a>
+					<img src="img/phone2.png" style="display: block;border-left: 1px solid rgb(0,0,0);"/>
+					<a href="phone.html" class="me fblueBlod">400-865-2696</a>
+				</div>
+			</form>
+		</div>
+		
+		<div id="titleBar">
+			<ul class="nav_ul">
+				<li><a href="indexcontent.html" target="maincontent" class="me current">首页</a></li>
+				<li><a href="buycar.html" target="maincontent" class="me">买车</a></li>
+				<li><a href="buyoutcar.html" target="maincontent" class="me">卖车</a></li>
+				<li><a href="buycar.html" target="maincontent" class="me">置换</a></li>
+				<li><a href="daikuan.html" target="maincontent" class="me">贷款购车</a></li>
+				<li><a href="comment.html" target="_blank" class="me">论坛</a></li>
+				<li><a href="shop.html" target="maincontent" class="me">商城</a></li>
+				<li><a href="fuwubaozhang.html" target="maincontent" class="me">服务保障</a></li>
+				<li><a href="buycar.html" target="maincontent" class="me">下载APP</a></li>
+			</ul>
+			<div class="title_phone">
+				<img src="img/phone3.png" class="fleft"/>
+				<input type="text" placeholder="填写手机号码，座机加区号" style="height: 25px;" class="fleft"/>
+				<input type="button" class="fleft bradius3 fwhiteBlod ml5" onclick="" value="免费通话" />
+			</div>
+		</div>
+	</body>
+</html>

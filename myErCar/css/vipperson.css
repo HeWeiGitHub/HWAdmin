@@ -1,0 +1,167 @@
+#person_nav
+{
+	width: 1080px;
+	height: 70px;
+	background: rgb(9,151,249);
+	margin-top: 2px;
+}
+#nav_search
+{
+	width: 209px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+#nav_search input[type="text"]
+{
+	width: 162px;
+	height:32px;
+	color: rgb(0,153,255);	
+}
+
+
+#nav_search button
+{
+	width: 47px;
+	height:32px;
+	text-align: center;
+	line-height: 32px;
+	color: white;
+	background: rgb(79,180,252);
+	border: none;
+}
+
+#nav_search button:hover
+{
+	background: rgb(200,0,0);
+}
+
+#notify
+{
+	width: 94px;
+	height: 30px;
+	line-height: 26px;
+	float: right;
+	border: 1px solid white;
+	border-radius: 2px;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+
+.nav_items{float: left; margin-left:20px;line-height: 70px;}
+.nav_items a
+{
+	display: block; 
+	/*width: 70px;*/
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	float: left;
+	margin-left: 20px;
+}
+
+.nav_items a:hover{color: white;text-decoration:none;}
+
+.fontBload{font-weight: bold;}
+
+#logo{margin-left: 80px;height: 70px;width: 125px;}
+
+#top_bar{height: 30px;clear: both;line-height: 30px;}
+#top_bar ul{float: left;}
+#top_bar ul li
+{
+	display: block;
+	float: left;
+}
+
+#pay_left
+{
+	width: 185px;
+	height: 345px;
+	margin-left: 30px;
+}
+
+#pay_right
+{
+	margin-left: 20px;
+	width: 723px;
+	height: 519px;
+	background: white;
+}
+
+.buy_left_list
+{
+	padding-top: 15px;
+}
+
+.buy_left_list li a
+{
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	text-decoration: none;
+}
+
+.buy_left_list li a:hover
+{
+	background: rgb(230,244,253);
+	border-left: 2px solid rgb(9,151,249);
+}
+
+/*导航栏,myTab是外层容器,myTabItems是放置单个tab的容器
+myTab使用相对定位,设置整个tab栏的长宽高,并设置底部边框
+myTabItems使用绝对定位,下边沿*/
+
+.myTab
+{
+	position: relative;
+	height: 70px;
+	width: inherit;
+	border-bottom: 1px solid rgba(1,1,1,0.4);
+}
+
+.myTabItems
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: inherit;
+	height: 32px;
+	bottom: -1px;	/*使tab遮盖住父框的下边沿,以便实现active效果*/
+	z-index: 1000;
+}
+
+.myTabItems a
+{
+	display: inline-block;
+	text-decoration: none;
+	
+}
+
+.myTabItem
+{
+	margin: 0;
+	padding: 0;
+	width: 116px;
+	height: 30px;
+	line-height: 30px;
+	/*display: inline-block;*/
+	margin-right: 10px;
+	border: 1px solid rgba(1,1,1,0.4);
+}
+
+.myTabItemActive
+{
+	border-bottom: white;
+	background: white;
+	margin-top: 1px;
+}
+
+.myTabItemInactive
+{
+	border: 0px;
+	background:rgba(1,1,1,0.4);
+}

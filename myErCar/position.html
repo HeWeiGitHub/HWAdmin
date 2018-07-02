@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+	</head>
+	<body>
+		
+		<div style="height: 400px;width: 600px;position: absolute;left: 500px; height: 400px;" class="borderblue1">
+		<!--
+        	absolute定位是相对于自己所在的父元素通过top，bottom，righ，left进行定位，脱离了正常的文档流，可以重叠,后来者在上，也可以通过z-index指定叠放次序，数字大者在上
+        -->
+			<div class=" borderblue1 bgBlue" style="height: 50px;width: 200px;position: absolute;top: 50px;left: 200px;">position: absolute1</div>
+			<div class=" borderblue1 bgRed" style="height: 50px;width: 200px;position: absolute;top: 80px;left: 250px;">position: absolute2</div>
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position: absolute;top: 100px;left: 300px;">position: absolute3</div>
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position: absolute;bottom: 210px;right: 40px;">position: absolute4</div>
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position: absolute;bottom: 180px;right: 210px;">position: absolute5</div>
+		
+		<!--
+        	static定位是在文档流中按顺序依次定位
+        -->
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position:static;top: 50px;left: 50px;">position:static1</div>
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position:static;top: 80px;left: 150px;">position:static2</div>
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position:static;top: top: 100px;left: 300px;">position:static3</div>
+		
+		<!--
+        	relative定位是在文档流中相对于自己原来默认的位置(即static按顺序的默认定位)通过top，bottom，righ，left进行定位
+        -->
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position: relative;bottom: 0px;right: 0px;">position: relative1</div>
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position: relative;bottom: 20px;left: 10px;">position: relative2</div>
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position: relative;top: 20px;left: 10px;">position: relative3</div>
+		
+		<!--
+        	fixed固定在窗口上
+        -->
+		
+			<div class=" borderblue1 bgYellow" style="height: 50px;width: 200px;position:fixed;top: 50px;left: 600px;">position:fixed1</div>
+		
+		<!--
+        	float在本行通过margin-top，margin-left，margin-right，margin-bottom相对于上一个元素或父元素进行浮动定位,float没有脱离文档流
+        -->
+        	
+        	<div class=" borderblue1 bgYellow fleft" style="text-align:right;height: 50px;width:100px;margin-top: 60px;">float1</div>
+			<div class=" borderblue1 bgYellow fleft" style="height: 50px;width: 200px;">float2</div>
+		
+		</div>
+		
+		<div class="borderblue1 bgBlue" style="height: 200px;width: 300px;position: absolute;top: 50px;right: 100px;">
+			<div class=" borderblue1 bgYellow fleft" style="text-align:right;height: 50px;width:100px;margin-top: 60px;">float1</div>
+			<div class=" borderblue1 bgYellow fleft" style="height: 50px;width: 100px;">float2</div>
+		</div>
+		
+		<div class="borderblue1 bgBlue" style="height: 200px;width: 300px;top: 400px;left: 200px;">
+			绝对定位：父元素没有relative
+			<div class=" borderblue1 bgYellow fleft" style="text-align:right;height: 50px;width:100px;margin-top: 60px;">float1</div>
+			<div class=" borderblue1 bgYellow fleft" style="height: 50px;width: 100px;">float2</div>
+			<div class=" borderblue1 bgYellow" style="position:absolute;height: 50px;width: 100px;bottom: 10px; left: 100px;">absolute1</div>
+			
+			<div class=" borderblue1 bgYellow" style="position:absolute;height: 50px;width: 100px;left: 100px;top: 30px;">absolute1</div>
+		</div>
+		
+		<div class="borderblue1 bgBlue" style="height: 200px;width: 300px;top: 400px;left: 200px;position: relative;">
+			绝对定位：父元素有relative
+			<div class=" borderblue1 bgYellow fleft" style="text-align:right;height: 50px;width:100px;margin-top: 60px;">float1</div>
+			<div class=" borderblue1 bgYellow fleft" style="height: 50px;width: 100px;">float2</div>
+			<div class=" borderblue1 bgYellow" style="position:absolute;height: 50px;width: 100px;bottom: 10px; left: 100px;">absolute1</div>
+			
+			<div class=" borderblue1 bgYellow" style="position:absolute;height: 50px;width: 100px;left: 100px;top: 30px;">absolute1</div>
+		</div>
+		
+		
+		
+		<!--
+			关于DIV定位（定位中善于使用float和边框）
+			
+		I	
+			有边框（border）时使用margin正常
+			无边框时使用margin要使用float帮助定位,float使元素在父元素中浮动，注意以下问题
+        	float:left 相对于父元素的左上角坐标
+        	float:right 相对于父元素的右上角坐标
+        	
+        II	
+        	使用position:relative时
+        	通过top，right，left，bottom相对于前一个元素或父元素定位
+        
+        III
+        	使用position:absolute时
+        	通过top，right，left，bottom相对于整个页面文档(body)定位或者
+        	父级的相对定位：是要把子DIV的绝对定位的起点以父DIV左上角为起点，如果没有就默认屏幕左上角了。
+			子DIV的绝对定位：是无视父DIV下别的元素。然后就是top，right，left，bottom 这个是用来定位的
+
+        IV
+        	使用position:fiex时
+        	通过top，right，left，bottom相对于整个窗口定位
+        -->
+        
+	</body>
+</html>

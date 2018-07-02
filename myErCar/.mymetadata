@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="erCar"
+  id="myeclipse.1468307979667"
+  context-root="/erCar"
+  j2ee-spec="5.0"
+  archive="erCar.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

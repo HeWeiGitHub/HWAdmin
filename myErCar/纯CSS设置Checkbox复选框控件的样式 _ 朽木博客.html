@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.xiumu.org/technology/style-checkboxes-with-css.shtml -->
+<html lang="zh-CN" itemscope="itemscope" itemtype="http://schema.org/WebPage" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:wb="http://open.weibo.com/wb" xmlns:fb="http://www.facebook.com/2008/fbml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/ca-pub-6470305625680726.js"></script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>纯CSS设置Checkbox复选框控件的样式 | 朽木博客</title>
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<link href="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/style.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="//static.xiumu.org/js/html5.js"></script>
+  <![endif]-->
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml">
+<meta property="og:title" content="纯CSS设置Checkbox复选框控件的样式">
+<meta property="og:description" content="Checkbox复选框是一个可能每一个网站都在使用的HTML元素，但大多数人并不给它们设置样式，所以在绝大多数网站它们看起来是一样的。为什么...">
+<meta property="og:site_name" content="朽木博客">
+<meta name="weibo:article:create_at" content="2014/08/04 12:18:28">
+<meta name="weibo:article:update_at" content="2015/10/27 20:17:41">
+<meta property="fb:admins" content="hixiumu">
+<script charset="UTF-8" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/bundle.js"></script><script charset="UTF-8" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/like.js"></script><link href="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/praiseButton.css" type="text/css" rel="stylesheet"></head>
+<body class="medium"><iframe id="WEIBO_STK_LOGIN_IFRAME" name="WEIBO_STK_LOGIN_IFRAME" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/login_Proxy.html" style="display: none;"></iframe><iframe id="sina_anywhere_iframe" style="display: none;" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource.html"></iframe><div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;"><iframe id="BAIDU_DUP_fp_iframe" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/o.html" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe></div>
+<header id="header">
+<div id="header-logo">
+<h1><a href="http://www.xiumu.org/" title="朽木博客">朽木博客</a></h1>
+</div>
+<nav id="tool-menu">
+<a class="rss" target="_blank" href="http://www.xiumu.org/feed/" title="RSS2.0"></a>
+<a class="showmenu hide" href="javascript:void(0);" title="菜单"></a>
+</nav> 
+<nav id="site-nav">
+<a href="http://i.xiumu.org/" target="_blank">关于</a>
+<a href="http://www.xiumu.org/wp-login.php">登录</a> </nav> 
+</header>
+<nav id="main-nav">
+<div class="menu_container">
+<ul id="menu_nav" class="menu"><li><a href="http://www.xiumu.org/">首页</a></li>
+<li><a href="http://www.xiumu.org/technology/">技术随笔</a></li>
+<li><a href="http://www.xiumu.org/tag/wordpress/">WordPress</a></li>
+<li><a href="http://www.xiumu.org/tag/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">前端开发</a></li>
+<li><a href="http://www.xiumu.org/tag/PHP/">PHP</a></li>
+<li><a href="http://www.xiumu.org/note/">网络日志</a></li>
+<li><a href="http://www.xiumu.org/archives/">归档</a></li>
+<li><a href="http://www.xiumu.org/message/">评论墙</a></li>
+</ul> </div>
+<div id="main-nav-right" class="reverse-icon">
+<a title="宽屏" class="buttons button-list" href="javascript:void(0);"></a>
+<a title="搜索" class="buttons searchform-button" href="javascript:void(0);"></a>
+</div>
+<div id="search-bar" class="hide">
+<form method="get" id="searchform" action="http://www.xiumu.org/">
+<input type="text" aria-required="true" name="s" id="search-input" tabindex="1" value="" placeholder="输入关键字…" x-webkit-speech="" lang="zh-CN">
+<input type="submit" class="button" id="search-submit-hidden" tabindex="2" value="搜索">
+</form>
+</div>
+</nav> 
+<section id="content">
+<aside id="sidebar">
+<ol class="widget-container widget-slide">
+<div data-role="slide-carousel" class="carousel slide" data-interval="5000">
+<div class="carousel-inner">
+<div class="item active" data-slide-order="0">
+<a href="http://www.xiumu.org/note/bluehost.shtml" target="_blank" rel="external nofollow">
+<img class="hide" lazyload="//static.xiumu.org/images/partner/bluehost.jpg" width="300" height="160" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/bluehost.jpg" style="display: inline;">
+</a>
+</div>
+</div>
+</div>
+</ol>
+<ol id="recentcomments" class="widget-container widget_recentcomments">
+<h2>最近评论</h2>
+<ul>
+<li id="rc-comment-14000" class="rc-item rc-comment clearfix"><div class="rc-avatar rc-left"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></div><div class="rc-info"><span class="rc-reviewer">孔繁荣整形</span> 在 <a class="rc-post" rel="nofollow external" href="http://www.xiumu.org/note/sublime-text-3.shtml#comment-14000">Sublime Text 3 破解版 + 注册机 + 汉化包 + 教程</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">软件不错，好评啊！ --孔繁荣整形</div></li><li id="rc-comment-13990" class="rc-item rc-comment clearfix"><div class="rc-avatar rc-left"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/6da07248583d55cbb333b84fb23ebcaf" srcset="https://cn.gravatar.com/avatar/6da07248583d55cbb333b84fb23ebcaf?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></div><div class="rc-info"><span class="rc-reviewer">wyzh97</span> 在 <a class="rc-post" rel="nofollow external" href="http://www.xiumu.org/note/gravatar-avatar-is-the-perfect-solution-for-the-wall.shtml#comment-13990">Gravatar头像被墙完美解决方案</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">额，用了多说的，我的虽然不是叉叉，但是是灰色的。感觉已经失效了http://www.paotime.com/178.html</div></li><li id="rc-comment-13989" class="rc-item rc-comment clearfix"><div class="rc-avatar rc-left"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/803e5a88915c2d2b62a12c489882a988" srcset="https://cn.gravatar.com/avatar/803e5a88915c2d2b62a12c489882a988?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></div><div class="rc-info"><span class="rc-reviewer">徐公子</span> 在 <a class="rc-post" rel="nofollow external" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13989">纯CSS设置Checkbox复选框控件的样式</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">.unit-button {
+float: left;
+width: 21px;
+height: 21px;
+position: relative;
+display: inline-block;
+input[type=checkbox],
+input[type=radio] {
+// visibility: hidden;
+opacity: 0.1;// 核心
+}
+label {
+display: block;
+width: 16px;
+height: 16px;
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-o-transition: all .5s ease;
+-ms-transition: all .5s ease;
+transition: all .5s ease;
+cursor: pointer;
+position: absolute;
+top: 5px;
+left: 0;
+z-index: -1; // 核心
+background: url(../../img/commme/checkbox.png) no-repeat;
+background-size: cover;
+}
+input[type=checkbox]:checked+label,
+input[type=radio]:checked+label {
+background: url(../../img/commme/checkbox_active.png) no-repeat;
+background-size: cover;
+}
+}
+这段代码可以实现你的，不过具体你要修改下，你的问题应该也是我遇到的，吧label设置z-index: -1;然后把控件设置成opacity,这样复选框 单选框都可以点击，不然单选框是有问题的！</div></li><li id="rc-comment-13986" class="rc-item rc-comment clearfix"><div class="rc-avatar rc-left"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></div><div class="rc-info"><span class="rc-reviewer">皮影戏</span> 在 <a class="rc-post" rel="nofollow external" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13986">纯CSS设置Checkbox复选框控件的样式</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">文字无法与复选框同行，怎么解决，求教！！</div></li><li id="rc-comment-13985" class="rc-item rc-comment clearfix"><div class="rc-avatar rc-left"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></div><div class="rc-info"><span class="rc-reviewer">111</span> 在 <a class="rc-post" rel="nofollow external" href="http://www.xiumu.org/note/sublime-text-3.shtml#comment-13985">Sublime Text 3 破解版 + 注册机 + 汉化包 + 教程</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">哈哈
+ฏ๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎ฏ๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎๎</div></li><li id="rc-comment-13984" class="rc-item rc-comment clearfix"><div class="rc-avatar rc-left"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/cf9a113d02dd5939084837bc7523c0da" srcset="https://cn.gravatar.com/avatar/cf9a113d02dd5939084837bc7523c0da?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></div><div class="rc-info"><span class="rc-reviewer">派派网</span> 在 <a class="rc-post" rel="nofollow external" href="http://www.xiumu.org/other/dns-migrated-to-baidu.shtml#comment-13984">DNS迁移至百度云加速</a></div><div class="rc-timestamp"></div><div class="rc-excerpt">过来学习，欢迎经常互访，共同进步。</div></li> </ul>
+</ol>
+<div style="height: 616px;"></div><section id="sidebarfixed" style="top: 15px; position: fixed;">
+<ol class="widget-container">
+<div id="partner-1">
+<script type="text/javascript" async="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/ga.js"></script><script type="text/javascript" async="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/ycjm"></script><script type="text/javascript" async="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/ycjm(1)"></script><script type="text/javascript">var cpro_id = "u1236260";</script>
+<script src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/c.js" type="text/javascript"></script><div id="BAIDU_SSP__wrapper_u1236260_0"><iframe id="iframeu1236260_0" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/ycjm.html" width="300" height="250" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0; vertical-align:bottom;margin:0;" allowtransparency="true"></iframe></div>
+</div>
+</ol>
+<ol id="toppost" class="widget-container widget-top-posts">
+<h2>热门文章</h2>
+<ul>
+<li class="list">
+<a title="老牌美国主机BlueHost注册购买教程图解" href="http://www.xiumu.org/note/bluehost.shtml" class="widget-top-posts-0" rel="external" target="_blank"><span class="widget-top-posts-comment">1</span><span class="widget-top-posts-title">老牌美国主机BlueHost注册购买教程图解</span></a>
+</li>
+<li class="list">
+<a title="Sublime Text 3 破解版 + 注册机 + 汉化包 + 教程" href="http://www.xiumu.org/note/sublime-text-3.shtml" class="widget-top-posts-1" rel="external" target="_blank"><span class="widget-top-posts-comment">2</span><span class="widget-top-posts-title">Sublime Text 3 破解版 + 注册机 + 汉化包 + 教程</span></a>
+</li>
+<li class="list">
+<a title="WordPress For SAE 移植全攻略" href="http://www.xiumu.org/diary/wordpress-for-sae.shtml" class="widget-top-posts-2" rel="external" target="_blank"><span class="widget-top-posts-comment">3</span><span class="widget-top-posts-title">WordPress For SAE 移植全攻略</span></a>
+</li>
+<li class="list">
+<a title="极路由壹S折腾笔记-安装goagent+nginx实现科学上网和优酷去广告" href="http://www.xiumu.org/other/hiwifi.shtml" class="widget-top-posts-3" rel="external" target="_blank"><span class="widget-top-posts-comment">4</span><span class="widget-top-posts-title">极路由壹S折腾笔记-安装goagent+nginx实现科学上网和优酷去广告</span></a>
+</li>
+<li class="list">
+<a title="Gravatar头像被墙完美解决方案" href="http://www.xiumu.org/note/gravatar-avatar-is-the-perfect-solution-for-the-wall.shtml" class="widget-top-posts-4" rel="external" target="_blank"><span class="widget-top-posts-comment">5</span><span class="widget-top-posts-title">Gravatar头像被墙完美解决方案</span></a>
+</li>
+<li class="list">
+<a title="新浪SAE绑定域名+伪静态" href="http://www.xiumu.org/technology/the-sina-sae-binding-domain-pseudo-static.shtml" class="widget-top-posts-5" rel="external" target="_blank"><span class="widget-top-posts-comment">6</span><span class="widget-top-posts-title">新浪SAE绑定域名+伪静态</span></a>
+</li>
+<li class="list">
+<a title="神奇的x0E4E" href="http://www.xiumu.org/other/the-magic-of-x0e4e.shtml" class="widget-top-posts-6" rel="external" target="_blank"><span class="widget-top-posts-comment">7</span><span class="widget-top-posts-title">神奇的x0E4E</span></a>
+</li>
+<li class="list">
+<a title="Sublime Text 手工汉化方法" href="http://www.xiumu.org/technology/sublime-text-hand-finished-method.shtml" class="widget-top-posts-7" rel="external" target="_blank"><span class="widget-top-posts-comment">8</span><span class="widget-top-posts-title">Sublime Text 手工汉化方法</span></a>
+</li>
+<li class="list">
+<a title="DNS迁移至百度云加速" href="http://www.xiumu.org/other/dns-migrated-to-baidu.shtml" class="widget-top-posts-8" rel="external" target="_blank"><span class="widget-top-posts-comment">9</span><span class="widget-top-posts-title">DNS迁移至百度云加速</span></a>
+</li>
+<li class="list">
+<a title="再一次体验到了GAE的强大" href="http://www.xiumu.org/note/once-again-experience-the-powerful-gae.shtml" class="widget-top-posts-9" rel="external" target="_blank"><span class="widget-top-posts-comment">10</span><span class="widget-top-posts-title">再一次体验到了GAE的强大</span></a>
+</li>
+</ul>
+</ol>
+</section>
+</aside> 
+<div class="main">
+<article class="entry-common clearfix" itemscope="" itemtype="http://schema.org/Article">
+<hgroup class="entry-header">
+<div class="pre-cat">
+<div class="pre-catinner">
+<a href="http://www.xiumu.org/technology/">技术随笔</a> </div>
+<div class="pre-catarrow"></div>
+</div>
+<h2 class="entry-name" itemprop="name">纯CSS设置Checkbox复选框控件的样式</h2>
+<div class="entry-commentnumber">
+<span class="number"><a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comments">22</a></span>
+<span class="corner"></span>
+</div>
+</hgroup>
+<address class="entry-meta">
+<time datetime="2014/08/04 12:18:28" itemprop="datePublished">2014/08/04 12:18:28</time>  </address>
+<section class="entry-content clearfix" itemprop="articleBody">
+<div id="partner-2" style="float:left;margin:0 10px 10px 0;">
+<script type="text/javascript">var cpro_id = "u1236260";</script>
+<script src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/c.js" type="text/javascript"></script><div id="BAIDU_SSP__wrapper_u1236260_1"><iframe id="iframeu1236260_1" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/ycjm(2).html" width="300" height="250" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0; vertical-align:bottom;margin:0;" allowtransparency="true"></iframe></div>
+</div>
+<p><code>Checkbox</code>复选框是一个可能每一个网站都在使用的HTML元素，但大多数人并不给它们设置样式，所以在绝大多数网站它们看起来是一样的。为什么不把你的网站中的<code>Checkbox</code>设置一个与众不同的样式，甚至可以让它看起来一点也不像复选框。 </p>
+<p>在本教程中，我们将创建5个不同的选择框，你可以在你的网站上使用它。</p>
+<p><a href="http://uploads.xiumu.org/2014/08/css-style-checkboxes.png"><img src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/css-style-checkboxes-600x73.png" alt="css-style-checkboxes" width="600" height="73" class="aligncenter size-large wp-image-2604"></a><br>
+<span id="more-2603"></span></p>
+<p>查看演示，可以看到我们将要创建的复选框样式。</p>
+<p><a href="http://uploads.xiumu.org/2014/08/checkbox-demo.html" target="_blank" class="button red">演示地址</a></p>
+<p>首先，需要添加一段CSS隐藏所有的Checkbox复选框，下面我们会改变它的外观。要做到点需要添加一段代码到你的CSS文件中。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * 隐藏默认的checkbox
+ */</span>
+input<span style="color: #00AA00;">[</span>type<span style="color: #00AA00;">=</span>checkbox<span style="color: #00AA00;">]</span> <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">visibility</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">hidden</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>隐藏掉所有的Checkbox复选框后，我们需要添加一个<code>label</code> HTML元素，我们都知道，当点击的有<code>for</code>属性的<code>label</code>标签时，对应的<code>Checkbox</code>复选框会被选中。这意味着，我们可以通过<code>label</code>的点击事件来处理我们的<code>Checkbox</code>复选框。</p>
+<h4>样式一</h4>
+<p><a href="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-one.png"><img src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-one.png" alt="checkbox-one" width="231" height="121" class="aligncenter size-full wp-image-2605"></a></p>
+<p>此复选框风格就像一个解锁滑块，滑块选中和未选中状态会显示在的不同位置。当单击滑块按钮（<code>label</code>标签），将会选中复选框，然后滑块移动到ON位置。 </p>
+<p>我们开始创建复选框区的HTML。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;section&gt;
+  &lt;!-- Checbox One --&gt;
+  &lt;h3&gt;Checkbox One&lt;/h3&gt;
+  	&lt;div class="checkboxOne"&gt;
+  		&lt;input type="checkbox" value="1" id="checkboxOneInput" name="" /&gt;
+	  	&lt;label for="checkboxOneInput"&gt;&lt;/label&gt;
+  	&lt;/div&gt;
+&lt;/section&gt;</pre></td></tr></tbody></table></div>
+<p>因为这个样式的复选框，一个label不足以完成任务，我们用一个DIV元素包含checkbox，我们需要使用它们来做黑色条带和圆角。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the slider bar
+ */</span>
+<span style="color: #6666ff;">.checkboxOne</span> <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">40px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">10px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#555</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">20px</span> <span style="color: #933;">80px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">relative</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">3px</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>现在，我们可以把label作为条带上的滑块，我们希望按钮效果是从条带的一侧移动到另一侧，我们可以添加label的过渡。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the slider from the label
+ */</span>
+<span style="color: #6666ff;">.checkboxOne</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">block</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">16px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">16px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">50%</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	-webkit-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-moz-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-o-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-ms-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">cursor</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">pointer</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">-3px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">-3px</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ccc</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>现在这个滑块在选中（关闭）位置，当我们选中复选框，我们希望有一个反应发生，所以我们可以移动滑块到另一端。我们需要知道，判断复选框被选中，如果是则改变label元素的left属性。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Move the slider in the correct position if the checkbox is clicked
+ */</span>
+<span style="color: #6666ff;">.checkboxOne</span> input<span style="color: #00AA00;">[</span>type<span style="color: #00AA00;">=</span>checkbox<span style="color: #00AA00;">]</span><span style="color: #3333ff;">:checked </span><span style="color: #00AA00;">+</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">27px</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>这就是你需要的第一个Checkbox复选框的CSS。</p>
+<h4>样式二</h4>
+<p><a href="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-two.png"><img src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-two.png" alt="checkbox-two" width="236" height="127" class="aligncenter size-full wp-image-2606"></a></p>
+<p>此复选框风格像样式一样，但不同的是，这个滑块按钮会改变颜色。当您单击滑块按钮，它移动到条带的另一边，并改变按钮的颜色。 </p>
+<p>HTML代码和样式一是完全一样的。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;section&gt;
+  &lt;!-- Checbox Two --&gt;
+  &lt;h3&gt;Checkbox Two&lt;/h3&gt;
+  	&lt;div class="checkboxTwo"&gt;
+  		&lt;input type="checkbox" value="1" id="checkboxTwoInput" name="" /&gt;
+	  	&lt;label for="checkboxTwoInput"&gt;&lt;/label&gt;
+  	&lt;/div&gt;
+&lt;/section&gt;</pre></td></tr></tbody></table></div>
+<p>这个DIV会变成比样式一大一些的条带，label依然是作为滑块，使用下面的CSS来定义它。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Checkbox Two
+ */</span>
+<span style="color: #6666ff;">.checkboxTwo</span> <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">120px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">40px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#333</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">20px</span> <span style="color: #933;">60px</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">50px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">relative</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>这个样式中间有一个黑色的条，滑块会沿着它左右滑动，但是DIV元素已经使用了，所以我们需要用<code>:before</code>伪类创建一个新的元素。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the line for the circle to move across
+ */</span>
+<span style="color: #6666ff;">.checkboxTwo</span><span style="color: #3333ff;">:before </span><span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">content</span><span style="color: #00AA00;">:</span> <span style="color: #ff0000;">''</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">19px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">14px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">2px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">90px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#111</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>和样式一一样，接下来我们为label写CSS样式，把它用作滑块。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the circle to click
+ */</span>
+<span style="color: #6666ff;">.checkboxTwo</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">block</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">22px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">22px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">50%</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	-webkit-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-moz-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-o-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-ms-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">cursor</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">pointer</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">9px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">z-index</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">1</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">12px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ddd</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>我要实现和样式一差不多的选中状态，当选中时改变label的left和background属性。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the click event for the checkbox
+ */</span>
+<span style="color: #6666ff;">.checkboxTwo</span> input<span style="color: #00AA00;">[</span>type<span style="color: #00AA00;">=</span>checkbox<span style="color: #00AA00;">]</span><span style="color: #3333ff;">:checked </span><span style="color: #00AA00;">+</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">84px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#26ca28</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<h4>样式三</h4>
+<p><a href="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-three.png"><img src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-three.png" alt="checkbox-three" width="264" height="126" class="aligncenter size-full wp-image-2607"></a></p>
+<p>这个复选框的样式比样式二更复杂一些，它和前面的例子一样会左右滑动，并且当改变选中和未选中的状态时，滑块滑动到另一侧并且在原位置显示对应的文本。</p>
+<p>首先，我们写HTML代码，这和前面是相同的。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;section&gt;
+  &lt;!-- Checbox Three --&gt;
+  &lt;h3&gt;Checkbox Three&lt;/h3&gt;
+  	&lt;div class="checkboxThree"&gt;
+  		&lt;input type="checkbox" value="1" id="checkboxThreeInput" name="" /&gt;
+	  	&lt;label for="checkboxThreeInput"&gt;&lt;/label&gt;
+  	&lt;/div&gt;
+&lt;/section&gt;</pre></td></tr></tbody></table></div>
+<p>然后，我们用相同的方式把div作为滑块，下面的代码会创建一个黑色圆角的条带，我们可以把滑块和文本放到里面。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Checkbox Three
+ */</span>
+<span style="color: #6666ff;">.checkboxThree</span> <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">120px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">40px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#333</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">20px</span> <span style="color: #933;">60px</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">50px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">relative</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>当滑块处于未选中状态时，滑块会在左侧，并且右边显示”OFF”，当点击的时候，滑块移动到右侧，左侧显示”ON”。<br>
+但是元素数量不足以让我们实现这些功能，所以我们要用<code>:before</code>和<code>:after</code>两个伪类创建两个元素，分别放置”ON”和”OFF”。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the text for the On position
+ */</span>
+<span style="color: #6666ff;">.checkboxThree</span><span style="color: #3333ff;">:before </span><span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">content</span><span style="color: #00AA00;">:</span> <span style="color: #ff0000;">'On'</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">12px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">13px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">2px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#26ca28</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">font-size</span><span style="color: #00AA00;">:</span> <span style="color: #933;">16px</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span>
+<span style="color: #808080; font-style: italic;">/**
+ * Create the label for the off position
+ */</span>
+<span style="color: #6666ff;">.checkboxThree</span><span style="color: #3333ff;">:after </span><span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">content</span><span style="color: #00AA00;">:</span> <span style="color: #ff0000;">'Off'</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">12px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">84px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">2px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">color</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ddd</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">font-size</span><span style="color: #00AA00;">:</span> <span style="color: #933;">16px</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>和前面一样，我们来添加滑块的样式，当被点击时它会移动到另一侧，并且改变颜色。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the pill to click
+ */</span>
+<span style="color: #6666ff;">.checkboxThree</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">block</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">52px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">22px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">50px</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	-webkit-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-moz-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-o-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-ms-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">cursor</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">pointer</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">9px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">z-index</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">1</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">12px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ddd</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span>
+&nbsp;
+<span style="color: #808080; font-style: italic;">/**
+ * Create the checkbox event for the label
+ */</span>
+<span style="color: #6666ff;">.checkboxThree</span> input<span style="color: #00AA00;">[</span>type<span style="color: #00AA00;">=</span>checkbox<span style="color: #00AA00;">]</span><span style="color: #3333ff;">:checked </span><span style="color: #00AA00;">+</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">60px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#26ca28</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<h4>样式四</h4>
+<p><a href="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-four.png"><img src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-four.png" alt="checkbox-four" width="249" height="125" class="aligncenter size-full wp-image-2608"></a></p>
+<p>在这个样式中，我们会创建两个圆形，当点击时改变里面的圆形的颜色表示选中与未选中的状态。<br>
+和前面一样的HTML代码。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;section&gt;
+  &lt;!-- Checbox Four --&gt;
+  &lt;h3&gt;Checkbox Four&lt;/h3&gt;
+  	&lt;div class="checkboxFour"&gt;
+  		&lt;input type="checkbox" value="1" id="checkboxFourInput" name="" /&gt;
+	  	&lt;label for="checkboxFourInput"&gt;&lt;/label&gt;
+  	&lt;/div&gt;
+&lt;/section&gt;</pre></td></tr></tbody></table></div>
+<p>接下来我们要为checkbox创建外面的圆形，使用CSS的<code>border-radius</code>属性，并且设置为100%就可以创建一个正圆形。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Checkbox Four
+ */</span>
+<span style="color: #6666ff;">.checkboxFour</span> <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">40px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">40px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#ddd</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">20px</span> <span style="color: #933;">90px</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">100%</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">relative</span><span style="color: #00AA00;">;</span>
+	-webkit-box-shadow<span style="color: #00AA00;">:</span> <span style="color: #933;">0px</span> <span style="color: #933;">1px</span> <span style="color: #933;">3px</span> rgba<span style="color: #00AA00;">(</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0.5</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	-moz-box-shadow<span style="color: #00AA00;">:</span> <span style="color: #933;">0px</span> <span style="color: #933;">1px</span> <span style="color: #933;">3px</span> rgba<span style="color: #00AA00;">(</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0.5</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	box-shadow<span style="color: #00AA00;">:</span> <span style="color: #933;">0px</span> <span style="color: #933;">1px</span> <span style="color: #933;">3px</span> rgba<span style="color: #00AA00;">(</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0.5</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>然后我们用label元素来创建一个小一点的圆形，它会根据checkbox状态来改变颜色。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the checkbox button
+ */</span>
+<span style="color: #6666ff;">.checkboxFour</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">block</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">30px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">30px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border-radius</span><span style="color: #00AA00;">:</span> <span style="color: #933;">100px</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	-webkit-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-moz-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-o-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	-ms-transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	transition<span style="color: #00AA00;">:</span> all .5s ease<span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">cursor</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">pointer</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">5px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">5px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">z-index</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">1</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#333</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	-webkit-box-shadow<span style="color: #00AA00;">:</span><span style="color: #993333;">inset</span> <span style="color: #933;">0px</span> <span style="color: #933;">1px</span> <span style="color: #933;">3px</span> rgba<span style="color: #00AA00;">(</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0.5</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	-moz-box-shadow<span style="color: #00AA00;">:</span><span style="color: #993333;">inset</span> <span style="color: #933;">0px</span> <span style="color: #933;">1px</span> <span style="color: #933;">3px</span> rgba<span style="color: #00AA00;">(</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0.5</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	box-shadow<span style="color: #00AA00;">:</span><span style="color: #993333;">inset</span> <span style="color: #933;">0px</span> <span style="color: #933;">1px</span> <span style="color: #933;">3px</span> rgba<span style="color: #00AA00;">(</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0</span><span style="color: #00AA00;">,</span><span style="color: #cc66cc;">0.5</span><span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>当复选框被选中的时候，我们要改变内圈的背景颜色来表示选中状态。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the checked state
+ */</span>
+<span style="color: #6666ff;">.checkboxFour</span> input<span style="color: #00AA00;">[</span>type<span style="color: #00AA00;">=</span>checkbox<span style="color: #00AA00;">]</span><span style="color: #3333ff;">:checked </span><span style="color: #00AA00;">+</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#26ca28</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<h4>样式五</h4>
+<p><a href="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-five.png"><img src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/checkbox-five.png" alt="checkbox-five" width="239" height="109" class="aligncenter size-full wp-image-2609"></a></p>
+<p>这个复选框的样式有些不同，它看起来只是比浏览器默认的checkbox样式稍微好了些，但是不同的是我们可以根据自己的需要来定义它的样式了。<br>
+首先还是一样的HTML代码</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="html" style="font-family:monospace;">&lt;section&gt;
+  &lt;!-- Checbox Five --&gt;
+  &lt;h3&gt;Checkbox Five&lt;/h3&gt;
+  	&lt;div class="checkboxFive"&gt;
+  		&lt;input type="checkbox" value="1" id="checkboxFiveInput" name="" /&gt;
+	  	&lt;label for="checkboxFiveInput"&gt;&lt;/label&gt;
+  	&lt;/div&gt;
+&lt;/section&gt;</pre></td></tr></tbody></table></div>
+<p>在前面的例子中，我们把div作为checkbox的滑动条带或者外部的圆圈，但是这一次我们不需要了，可以使用div元素来设置复选框的区域。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Checkbox Five
+ */</span>
+<span style="color: #6666ff;">.checkboxFive</span> <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">25px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">margin</span><span style="color: #00AA00;">:</span> <span style="color: #933;">20px</span> <span style="color: #933;">100px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">relative</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>label标签用于Click事件和我们要定义的复选框的方框样式。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the box for the checkbox
+ */</span>
+<span style="color: #6666ff;">.checkboxFive</span> label <span style="color: #00AA00;">{</span>
+	<span style="color: #000000; font-weight: bold;">cursor</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">pointer</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">25px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">25px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
+  	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #cc00cc;">#eee</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border</span><span style="color: #00AA00;">:</span><span style="color: #933;">1px</span> <span style="color: #993333;">solid</span> <span style="color: #cc00cc;">#ddd</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>接下来，我们要创建方框中的对勾，对于这一点，我们可以使用<code>:after</code>伪类创建一个新的元素，为了实现这个样式，我们可以创建一个5px x 9px的长方形并给他加上边框。这时候我们去掉上面和右边的边框之后，它会看起来像一个字母L。然后我们可以使用CSS的<code>transform</code>属性让它旋转一下，这样看起来就像是一个对勾。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Display the tick inside the checkbox
+ */</span>
+<span style="color: #6666ff;">.checkboxFive</span> label<span style="color: #3333ff;">:after </span><span style="color: #00AA00;">{</span>
+	opacity<span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0.2</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">content</span><span style="color: #00AA00;">:</span> <span style="color: #ff0000;">''</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">position</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">absolute</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">width</span><span style="color: #00AA00;">:</span> <span style="color: #933;">9px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">height</span><span style="color: #00AA00;">:</span> <span style="color: #933;">5px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">background</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">transparent</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">top</span><span style="color: #00AA00;">:</span> <span style="color: #933;">6px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">left</span><span style="color: #00AA00;">:</span> <span style="color: #933;">7px</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border</span><span style="color: #00AA00;">:</span> <span style="color: #933;">3px</span> <span style="color: #993333;">solid</span> <span style="color: #cc00cc;">#333</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border-top</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">none</span><span style="color: #00AA00;">;</span>
+	<span style="color: #000000; font-weight: bold;">border-right</span><span style="color: #00AA00;">:</span> <span style="color: #993333;">none</span><span style="color: #00AA00;">;</span>
+&nbsp;
+	-webkit-transform<span style="color: #00AA00;">:</span> rotate<span style="color: #00AA00;">(</span>-45deg<span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	-moz-transform<span style="color: #00AA00;">:</span> rotate<span style="color: #00AA00;">(</span>-45deg<span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	-o-transform<span style="color: #00AA00;">:</span> rotate<span style="color: #00AA00;">(</span>-45deg<span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	-ms-transform<span style="color: #00AA00;">:</span> rotate<span style="color: #00AA00;">(</span>-45deg<span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+	transform<span style="color: #00AA00;">:</span> rotate<span style="color: #00AA00;">(</span>-45deg<span style="color: #00AA00;">)</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>在上面的CSS中，我们已经设置它的透明度为0.2，所以你会看到的复选框有一个半透明的对勾。你可以在悬停的时候加深一点，在选中时，可以把设置为不透明。</p>
+<div class="wp_syntax"><table><tbody><tr><td class="code"><pre class="css" style="font-family:monospace;"><span style="color: #808080; font-style: italic;">/**
+ * Create the hover event of the tick
+ */</span>
+<span style="color: #6666ff;">.checkboxFive</span> label<span style="color: #3333ff;">:hover</span><span style="color: #00AA00;">:</span><span style="color: #3333ff;">:after </span><span style="color: #00AA00;">{</span>
+	opacity<span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">0.5</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span>
+&nbsp;
+<span style="color: #808080; font-style: italic;">/**
+ * Create the checkbox state for the tick
+ */</span>
+<span style="color: #6666ff;">.checkboxFive</span> input<span style="color: #00AA00;">[</span>type<span style="color: #00AA00;">=</span>checkbox<span style="color: #00AA00;">]</span><span style="color: #3333ff;">:checked </span><span style="color: #00AA00;">+</span> label<span style="color: #3333ff;">:after </span><span style="color: #00AA00;">{</span>
+	opacity<span style="color: #00AA00;">:</span> <span style="color: #cc66cc;">1</span><span style="color: #00AA00;">;</span>
+<span style="color: #00AA00;">}</span></pre></td></tr></tbody></table></div>
+<p>这将会为你创建全新的checkbox复选框样式。<br>
+观看演示，看看这些复选框是如何工作的。</p>
+<p><a href="http://uploads.xiumu.org/2014/08/checkbox-demo.html" target="_blank" class="button red">演示地址</a></p>
+<p>本文翻译自 <a href="http://www.paulund.co.uk/style-checkboxes-with-css">How To Style A Checkbox With CSS</a><br>
+自定义select样式 <a href="http://www.myjqueryplugins.com/jquery-plugin/selectyze" target="_blank">Selectyze jquery plugin – Skin your own selects lists with jQuery &amp; CSS</a><br>
+拓展阅读 <a href="http://cssdeck.com/labs/css-checkbox-styles" target="_blank">CSS3 Checkbox Styles</a></p>
+<div id="partner-3">
+<ins class="adsbygoogle" style="display: block; height: 60px;" data-ad-client="ca-pub-6470305625680726" data-ad-slot="3401020795" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:630px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:630px;background-color:transparent"><iframe width="630" height="60" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</section>
+<footer>
+<div class="entry-meta-tags">标签：<a href="http://www.xiumu.org/tag/css/" rel="tag">CSS</a>, <a href="http://www.xiumu.org/tag/%e5%89%8d%e7%ab%af%e5%bc%80%e5%8f%91/" rel="tag">前端开发</a></div>
+<div class="entry-meta-wblike">
+<wb:like appkey="2G6zbl"><div class="WB_widget WB_praise" node-type="outer"><div class="praise_btn_line" node-type="inner"><a node-type="likeBtn" action-type="like" action-data="type=like" href="javascript:;" class="praise_btn status_origin "><cite class="praise_btn_inner"><u class="WB_ico_logo"></u><cite class="praise_text">赞</cite></cite></a><cite class="praise_intro" node-type="text">    	    <cite class="related_user" tempdata="true">
+		<a class="related_name" action-type="userclk" href="http://weibo.com/1954097353" target="_blank" title="大学变淑女的靓仔萌灰灰">大学变淑...</a>
+		</cite>		
+				<cite class="name_split">, </cite>
+				
+		    <cite class="related_user">
+		<a class="related_name" action-type="userclk" href="http://weibo.com/2258680250" target="_blank" title="_____xixi__">_____xix...</a>
+		</cite>		
+				
+		<cite class="praise_display">等<em node-type="count">8</em>人赞过</cite>
+</cite><div class="related_list_container" node-type="face"><ul class="related_list">
+	<li class="related_item" tempdata="true">
+		<a class="related_item_a" action-type="userclk" href="http://weibo.com/1954097353" target="_blank" title="大学变淑女的靓仔萌灰灰" short_title="大学变淑..."><img class="related_item_a_img" width="30" height="30" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/747928c9jw1e8qgp5bmzyj2050050aa8.jpg" alt="大学变淑女的靓仔萌灰灰"></a>
+	</li>
+ 	<li class="related_item">
+		<a class="related_item_a" action-type="userclk" href="http://weibo.com/2258680250" target="_blank" title="_____xixi__" short_title="_____xix..."><img class="related_item_a_img" width="30" height="30" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/86a0b9bajw8f1xgzw1pbpj20sg0hsgmx.jpg" alt="_____xixi__"></a>
+	</li>
+ 	<li class="related_item">
+		<a class="related_item_a" action-type="userclk" href="http://weibo.com/luvian902" target="_blank" title="装着兔子的维安安" short_title="装着兔子..."><img class="related_item_a_img" width="30" height="30" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/61410c8bjw8ex345inzmgj20c80c8aa8.jpg" alt="装着兔子的维安安"></a>
+	</li>
+ 	<li class="related_item">
+		<a class="related_item_a" action-type="userclk" href="http://weibo.com/yiyangl" target="_blank" title="一本正经的胡说捌道" short_title="一本正经..."><img class="related_item_a_img" width="30" height="30" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/6dcfd1b8jw8ezxz33qtxtj20ro0roq3f.jpg" alt="一本正经的胡说捌道"></a>
+	</li>
+ 	<li class="related_item">
+		<a class="related_item_a" action-type="userclk" href="http://weibo.com/Mrshyi" target="_blank" title="mrshyi" short_title="mrshyi"><img class="related_item_a_img" width="30" height="30" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/dd33da22gw1ei45n0rltlj20sg0sf76m.jpg" alt="mrshyi"></a>
+	</li>
+ 	<li class="related_item">
+		<a class="related_item_a" action-type="userclk" href="http://weibo.com/2200413790" target="_blank" title="G_纪" short_title="G_纪"><img class="related_item_a_img" width="30" height="30" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/8327a65ejw8er8mjpq0o7j20a609pwfd.jpg" alt="G_纪"></a>
+	</li>
+ </ul>
+</div></div></div></wb:like>
+</div>
+<div class="entry-meta-copyright">本博客所有文章如无特别注明均为原创。作者：<span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><a href="https://plus.google.com/+RichardJiaPlus" rel="publisher" itemprop="name">朽木</a></span><br>复制或转载请以超链接形式注明转自<span itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><a href="http://www.xiumu.org/" itemprop="name">朽木博客</a></span>，原文地址 <a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml" title="纯CSS设置Checkbox复选框控件的样式" itemprop="url">http://www.xiumu.org/technology/style-checkboxes-with-css.shtml</a></div>
+<nav class="entry-nav">
+<span class="prev"><a href="http://www.xiumu.org/technology/commonly-used-phpmyadmin-configuration-file-options.shtml" rel="prev">&lt; 上一篇<i>phpMyAdmin 配置文件中文版</i></a></span>
+<span class="next"><a href="http://www.xiumu.org/diary/chrome-remove-switch-button-in-the-top-right-corner-of-the-users.shtml" rel="next">下一篇 &gt;<i>Chrome去掉右上角的用户切换按钮</i></a></span>
+</nav>
+</footer>
+</article>
+<div id="comments-box" class="comments-area">
+<meta itemprop="interactionCount" content="22 UserComments">
+<div id="comments-head" class="J_CmtHead">
+<h2 id="comments" class="yahei">共 22 条评论</h2>
+</div>
+<ol class="commentlist">
+<li class="comment" id="comment-13986" data-id="13986" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13986"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">皮影戏</cite>
+<time pubdate="2016年7月27日 4:45 下午" class="comment-date" itemprop="datePublished">2016年7月27日 4:45 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13986#respond" onclick="return addComment.moveForm( &quot;comment-13986&quot;, &quot;13986&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给皮影戏">回复</a></span>
+</div>
+<section id="comment-body-13986" class="comment-body" itemprop="description">
+<p>文字无法与复选框同行，怎么解决，求教！！</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13963" data-id="13963" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13963"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/81757a0643efce34b540b1faf5d9d275" srcset="https://cn.gravatar.com/avatar/81757a0643efce34b540b1faf5d9d275?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">抚琴</cite>
+<time pubdate="2016年5月31日 2:50 下午" class="comment-date" itemprop="datePublished">2016年5月31日 2:50 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13963#respond" onclick="return addComment.moveForm( &quot;comment-13963&quot;, &quot;13963&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给抚琴">回复</a></span>
+</div>
+<section id="comment-body-13963" class="comment-body" itemprop="description">
+<p>如何可以让这些按钮默认是选中状态呢 博主求告知下</p>
+</section>
+</div>
+<ul class="children">
+<li class="comment" id="comment-13996" data-id="13996" data-depth="2" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13996"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/f457f32ad0ad4fb9124abc55e14d5a03" srcset="https://cn.gravatar.com/avatar/f457f32ad0ad4fb9124abc55e14d5a03?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">cw</cite>
+<time pubdate="2016年8月12日 3:12 下午" class="comment-date" itemprop="datePublished">2016年8月12日 3:12 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13996#respond" onclick="return addComment.moveForm( &quot;comment-13996&quot;, &quot;13996&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给cw">回复</a></span>
+</div>
+<section id="comment-body-13996" class="comment-body" itemprop="description">
+<p>直接在input中加checked就会默认选中了</p>
+</section>
+</div>
+</li> 
+</ul> 
+</li> 
+<li class="comment" id="comment-13956" data-id="13956" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13956"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/16310e89ecdb52329658c2c82a0a133c" srcset="https://cn.gravatar.com/avatar/16310e89ecdb52329658c2c82a0a133c?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">郭子帅</cite>
+<time pubdate="2016年5月27日 11:48 上午" class="comment-date" itemprop="datePublished">2016年5月27日 11:48 上午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13956#respond" onclick="return addComment.moveForm( &quot;comment-13956&quot;, &quot;13956&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给郭子帅">回复</a></span>
+</div>
+<section id="comment-body-13956" class="comment-body" itemprop="description">
+<p>东西蛮好用的，改了改，达到了想要的效果，但是公司任务要求兼容到IE8，本人初入门，想问下解决方案，是javascript还是单独编写IE8的 css样式，或者其他的什么解决方案，求教</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13951" data-id="13951" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13951"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/32ecdf7378a7137fbf7f3a1b9f1e424d" srcset="https://cn.gravatar.com/avatar/32ecdf7378a7137fbf7f3a1b9f1e424d?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">迪迪</cite>
+<time pubdate="2016年5月18日 11:02 上午" class="comment-date" itemprop="datePublished">2016年5月18日 11:02 上午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13951#respond" onclick="return addComment.moveForm( &quot;comment-13951&quot;, &quot;13951&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给迪迪">回复</a></span>
+</div>
+<section id="comment-body-13951" class="comment-body" itemprop="description">
+<p>这个样式只对第一个有效果，后面的都没有效果为什么。求帮助</p>
+</section>
+</div>
+<ul class="children">
+<li class="comment" id="comment-13993" data-id="13993" data-depth="2" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13993"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/f457f32ad0ad4fb9124abc55e14d5a03" srcset="https://cn.gravatar.com/avatar/f457f32ad0ad4fb9124abc55e14d5a03?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">wenwen</cite>
+<time pubdate="2016年8月12日 2:33 下午" class="comment-date" itemprop="datePublished">2016年8月12日 2:33 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13993#respond" onclick="return addComment.moveForm( &quot;comment-13993&quot;, &quot;13993&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给wenwen">回复</a></span>
+</div>
+<section id="comment-body-13993" class="comment-body" itemprop="description">
+<p>我也是相同的问题，这种效果只能针对一个checkbox，但是checkbox一般都不止一个，怎样达到效果呢？求帮助</p>
+</section>
+</div>
+</li> 
+</ul> 
+</li> 
+<li class="comment" id="comment-13741" data-id="13741" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13741"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">gerd</cite>
+<time pubdate="2015年9月22日 11:44 上午" class="comment-date" itemprop="datePublished">2015年9月22日 11:44 上午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13741#respond" onclick="return addComment.moveForm( &quot;comment-13741&quot;, &quot;13741&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给gerd">回复</a></span>
+</div>
+<section id="comment-body-13741" class="comment-body" itemprop="description">
+<p>为什么复选框用了只有第一个可以点击，其他的点击都只对第一个起作用？？？？</p>
+</section>
+</div>
+<ul class="children">
+<li class="comment" id="comment-13846" data-id="13846" data-depth="2" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13846"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">小七</cite>
+<time pubdate="2016年1月7日 2:34 下午" class="comment-date" itemprop="datePublished">2016年1月7日 2:34 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13846#respond" onclick="return addComment.moveForm( &quot;comment-13846&quot;, &quot;13846&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给小七">回复</a></span>
+</div>
+<section id="comment-body-13846" class="comment-body" itemprop="description">
+<p>因为你没有改ID</p>
+</section>
+</div>
+<ul class="children">
+<li class="comment" id="comment-13954" data-id="13954" data-depth="3" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13954"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">钱多多</cite>
+<time pubdate="2016年5月23日 2:49 下午" class="comment-date" itemprop="datePublished">2016年5月23日 2:49 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13954#respond" onclick="return addComment.moveForm( &quot;comment-13954&quot;, &quot;13954&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给钱多多">回复</a></span>
+</div>
+<section id="comment-body-13954" class="comment-body" itemprop="description">
+<p>id？ 难道每个复制的都要一个新的ID吗</p>
+</section>
+</div>
+<ul class="children">
+<li class="comment" id="comment-13989" data-id="13989" data-depth="4" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13989"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/803e5a88915c2d2b62a12c489882a988" srcset="https://cn.gravatar.com/avatar/803e5a88915c2d2b62a12c489882a988?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">徐公子</cite>
+<time pubdate="2016年8月7日 12:30 上午" class="comment-date" itemprop="datePublished">2016年8月7日 12:30 上午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13989#respond" onclick="return addComment.moveForm( &quot;comment-13989&quot;, &quot;13989&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给徐公子">回复</a></span>
+</div>
+<section id="comment-body-13989" class="comment-body" itemprop="description">
+<p>.unit-button {<br>
+float: left;<br>
+width: 21px;<br>
+height: 21px;<br>
+position: relative;<br>
+display: inline-block;<br>
+input[type=checkbox],<br>
+input[type=radio] {<br>
+// visibility: hidden;<br>
+opacity: 0.1;// 核心<br>
+}<br>
+label {<br>
+display: block;<br>
+width: 16px;<br>
+height: 16px;<br>
+-webkit-transition: all .5s ease;<br>
+-moz-transition: all .5s ease;<br>
+-o-transition: all .5s ease;<br>
+-ms-transition: all .5s ease;<br>
+transition: all .5s ease;<br>
+cursor: pointer;<br>
+position: absolute;<br>
+top: 5px;<br>
+left: 0;<br>
+z-index: -1; // 核心<br>
+background: url(../../img/commme/checkbox.png) no-repeat;<br>
+background-size: cover;<br>
+}<br>
+input[type=checkbox]:checked+label,<br>
+input[type=radio]:checked+label {<br>
+background: url(../../img/commme/checkbox_active.png) no-repeat;<br>
+background-size: cover;<br>
+}<br>
+}</p>
+<p>这段代码可以实现你的，不过具体你要修改下，你的问题应该也是我遇到的，吧label设置z-index: -1;然后把控件设置成opacity,这样复选框 单选框都可以点击，不然单选框是有问题的！</p>
+</section>
+</div>
+</li> 
+</ul> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</li> 
+<li class="comment" id="comment-13725" data-id="13725" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13725"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">豆豆天尊</cite>
+<time pubdate="2015年8月27日 5:20 下午" class="comment-date" itemprop="datePublished">2015年8月27日 5:20 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13725#respond" onclick="return addComment.moveForm( &quot;comment-13725&quot;, &quot;13725&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给豆豆天尊">回复</a></span>
+</div>
+<section id="comment-body-13725" class="comment-body" itemprop="description">
+<p>很好用，但是ie7和ie8都用不了啊，如果这两个也能用就更好了</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13720" data-id="13720" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13720"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">很有用，点个赞</cite>
+<time pubdate="2015年8月21日 3:54 下午" class="comment-date" itemprop="datePublished">2015年8月21日 3:54 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13720#respond" onclick="return addComment.moveForm( &quot;comment-13720&quot;, &quot;13720&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给很有用，点个赞">回复</a></span>
+</div>
+<section id="comment-body-13720" class="comment-body" itemprop="description">
+<p>很有用，点个赞</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13715" data-id="13715" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13715"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/1e703053587248c48139c6a2dafe0d50" srcset="https://cn.gravatar.com/avatar/1e703053587248c48139c6a2dafe0d50?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">hehedaidai</cite>
+<time pubdate="2015年8月10日 6:04 下午" class="comment-date" itemprop="datePublished">2015年8月10日 6:04 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13715#respond" onclick="return addComment.moveForm( &quot;comment-13715&quot;, &quot;13715&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给hehedaidai">回复</a></span>
+</div>
+<section id="comment-body-13715" class="comment-body" itemprop="description">
+<p>很有用。谢谢</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13713" data-id="13713" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13713"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">IE8不支持</cite>
+<time pubdate="2015年8月3日 10:10 上午" class="comment-date" itemprop="datePublished">2015年8月3日 10:10 上午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13713#respond" onclick="return addComment.moveForm( &quot;comment-13713&quot;, &quot;13713&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给IE8不支持">回复</a></span>
+</div>
+<section id="comment-body-13713" class="comment-body" itemprop="description">
+<p>IE8不支持</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13686" data-id="13686" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13686"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">学到了</cite>
+<time pubdate="2015年7月5日 3:42 下午" class="comment-date" itemprop="datePublished">2015年7月5日 3:42 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13686#respond" onclick="return addComment.moveForm( &quot;comment-13686&quot;, &quot;13686&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给学到了">回复</a></span>
+</div>
+<section id="comment-body-13686" class="comment-body" itemprop="description">
+<p>谢谢博主了</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13656" data-id="13656" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13656"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/680ef9696774f0aa90130be8b6524da7" srcset="https://cn.gravatar.com/avatar/680ef9696774f0aa90130be8b6524da7?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">恒宁</cite>
+<time pubdate="2015年5月30日 9:26 下午" class="comment-date" itemprop="datePublished">2015年5月30日 9:26 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13656#respond" onclick="return addComment.moveForm( &quot;comment-13656&quot;, &quot;13656&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给恒宁">回复</a></span>
+</div>
+<section id="comment-body-13656" class="comment-body" itemprop="description">
+<p>(☆_☆)看着眼熟，果然是wordpress</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13655" data-id="13655" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13655"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/680ef9696774f0aa90130be8b6524da7" srcset="https://cn.gravatar.com/avatar/680ef9696774f0aa90130be8b6524da7?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">恒宁</cite>
+<time pubdate="2015年5月30日 9:24 下午" class="comment-date" itemprop="datePublished">2015年5月30日 9:24 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13655#respond" onclick="return addComment.moveForm( &quot;comment-13655&quot;, &quot;13655&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给恒宁">回复</a></span>
+</div>
+<section id="comment-body-13655" class="comment-body" itemprop="description">
+<p>无意中发现，以后会用到，谢谢分享</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-13632" data-id="13632" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-13632"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/saved_resource" srcset="https://cn.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo avatar-default" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author">到处逛逛</cite>
+<time pubdate="2015年5月12日 4:42 下午" class="comment-date" itemprop="datePublished">2015年5月12日 4:42 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=13632#respond" onclick="return addComment.moveForm( &quot;comment-13632&quot;, &quot;13632&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给到处逛逛">回复</a></span>
+</div>
+<section id="comment-body-13632" class="comment-body" itemprop="description">
+<p>看了下，很有用，点个赞！</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-8602" data-id="8602" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-8602"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/89cf0b602d43dcb1cce6a11a87fa6241" srcset="https://cn.gravatar.com/avatar/89cf0b602d43dcb1cce6a11a87fa6241?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author"><a href="http://xn--rgv/" rel="external nofollow" target="_blank">扫街男孩</a></cite>
+<time pubdate="2014年8月8日 11:44 下午" class="comment-date" itemprop="datePublished">2014年8月8日 11:44 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=8602#respond" onclick="return addComment.moveForm( &quot;comment-8602&quot;, &quot;8602&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给扫街男孩">回复</a></span>
+</div>
+<section id="comment-body-8602" class="comment-body" itemprop="description">
+<p>现在朽木开始搞学术了?哈哈</p>
+</section>
+</div>
+<ul class="children">
+<li class="comment" id="comment-8747" data-id="8747" data-depth="2" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-8747"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/07b979c71a73f11087a78102b320fe14" srcset="https://cn.gravatar.com/avatar/07b979c71a73f11087a78102b320fe14?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author comment-author-verified" itemprop="author"><a href="http://www.xiumu.org/" rel="external nofollow" target="_blank">朽木</a></cite>
+<time pubdate="2014年8月10日 11:48 上午" class="comment-date" itemprop="datePublished">2014年8月10日 11:48 上午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=8747#respond" onclick="return addComment.moveForm( &quot;comment-8747&quot;, &quot;8747&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给朽木">回复</a></span>
+</div>
+<section id="comment-body-8747" class="comment-body" itemprop="description">
+<p>偶尔装一下老师感觉也不错的说</p>
+</section>
+</div>
+</li> 
+</ul> 
+</li> 
+<li class="comment" id="comment-8519" data-id="8519" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-8519"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/466440bc65b2df335b021a98b67340fb" srcset="https://cn.gravatar.com/avatar/466440bc65b2df335b021a98b67340fb?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author"><a href="http://www.inbeijing.net/" rel="external nofollow" target="_blank">Inbeijing</a></cite>
+<time pubdate="2014年8月8日 6:17 上午" class="comment-date" itemprop="datePublished">2014年8月8日 6:17 上午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=8519#respond" onclick="return addComment.moveForm( &quot;comment-8519&quot;, &quot;8519&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给Inbeijing">回复</a></span>
+</div>
+<section id="comment-body-8519" class="comment-body" itemprop="description">
+<p>学习一下，看到博主好多php技术文章，以后要常来看看了，我现在的站也是用php架构的</p>
+</section>
+</div>
+</li> 
+<li class="comment" id="comment-8416" data-id="8416" data-depth="1" itemscope="" itemprop="comment" itemtype="http://schema.org/Comment">
+<div class="comment-content clearfix">
+<div class="comment-top clearfix">
+<div class="comment-avatar">
+<a href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#comment-8416"><img alt="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/7d94d007e41120a054f3892325c064c9" srcset="https://cn.gravatar.com/avatar/7d94d007e41120a054f3892325c064c9?s=60&amp;d=mm&amp;r=g 2x" class="avatar avatar-30 photo" height="30" width="30"></a>
+</div>
+<cite class="comment-author" itemprop="author"><a href="http://www.cjbaixiaodan.com/" rel="external nofollow" target="_blank">百消丹</a></cite>
+<time pubdate="2014年8月6日 9:34 下午" class="comment-date" itemprop="datePublished">2014年8月6日 9:34 下午</time>
+<div class="comment-edit"></div>
+<span class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml?replytocom=8416#respond" onclick="return addComment.moveForm( &quot;comment-8416&quot;, &quot;8416&quot;, &quot;respond&quot;, &quot;2603&quot; )" aria-label="回复给百消丹">回复</a></span>
+</div>
+<section id="comment-body-8416" class="comment-body" itemprop="description">
+<p>博主的qq多少呢，有问题请教</p>
+</section>
+</div>
+</li> 
+</ol> 
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">发表评论 <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#respond" style="display:none;">X</a></small></h3>
+<form action="http://www.xiumu.org/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment_notes">您的邮箱不会公开，当您的评论有新的回复时，会通过您填写的邮箱向您发送评论内容。 必填字段 <span class="required">*</span></p> <p class="comment-form-author"><label for="author">昵称 <span class="required">*</span></label><input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-email"><label for="email">邮箱 (可选)</label><input type="text" size="30" value="" name="email" id="email"></p>
+<p class="comment-form-url"><label for="url">网址 (可选)</label><input type="text" size="30" value="" name="url" id="url"></p>
+<p class="comment-form-comment"><a href="http://www.xiumu.org/technology/wordpress-to-prevent-comment-spam.shtml" rel="external" target="_blank">为何看不到我发布的评论？</a><textarea id="comment" name="comment" aria-required="true"></textarea></p><div id="ajax-comments-loading" class="hide"><img src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/ajax.gif" style="vertical-align:middle; margin: 5px 0;" alt="">正在提交, 请稍候...</div><p></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="发表评论"> <input type="hidden" name="comment_post_ID" value="2603" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8e9c9fc673"></p><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"><label for="comment_mail_notify"> 回复邮件通知</label><p style="display: none;"></p> <input type="hidden" id="ak_js" name="ak_js" value="1472463148773"></form>
+</div> 
+</div> 
+</div> 
+</section> 
+<footer id="footer">
+<div class="inner">
+<div class="footer-logo">
+<a class="logo" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#header"></a>
+<p>
+Copyright © 2016 <b>XiuMu</b> 版权所有.
+</p>
+<p class="licenses">
+如非特别注明，本站所有文章皆采用 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="external nofollow" target="_blank">署名-非商业性使用-相同方式共享2.5</a> 的创作共用协议。
+</p>
+<p class="hide">
+Unless otherwise specified, all content is made available under the <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" rel="external nofollow" target="_blank">CC Creative Commons License</a>.
+</p>
+</div>
+<div class="footer-navi clearfix">
+<div class="nav first">
+<div class="name">About</div>
+<ul>
+<li><a href="http://i.xiumu.org/">关于朽木</a></li>
+<li><a href="http://www.xiumu.org/about/#contact">联系</a></li>
+</ul>
+</div>
+<div class="nav">
+<div class="name">Pages</div>
+<ul>
+<li><a href="http://www.xiumu.org/message/">留言反馈</a></li>
+<li><a href="http://www.xiumu.org/archives/">日志归档</a></li>
+<li><a href="http://www.xiumu.org/links/">友情链接</a></li>
+</ul>
+</div>
+<div class="nav">
+<div class="name">Social</div>
+<ul>
+<li><a href="http://weibo.com/516665188" rel="external nofollow" target="_blank">新浪微博</a></li>
+<li><a href="http://cn.linkedin.com/in/xiumu" rel="external nofollow" target="_blank">Linkedin</a></li>
+<li><a href="http://t.qq.com/vkaster" rel="external nofollow" target="_blank">腾讯微博</a></li>
+<li><a href="https://plus.google.com/+RichardJiaPlus" target="_blank" rel="publisher">Google+</a></li>
+</ul>
+</div>
+</div>
+<div style="clear:left;"></div>
+</div>
+<div class="copyright hide">Copyright © 2016 <b>XiuMu</b> 版权所有.</div>
+</footer>
+<script type="text/javascript" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/jquery.min.js"></script>
+<script async="" src="./纯CSS设置Checkbox复选框控件的样式 _ 朽木博客_files/adsbygoogle.js"></script>
+
+ <a class="go2top" href="http://www.xiumu.org/technology/style-checkboxes-with-css.shtml#header" style="display: inline;"><span class="go2top-inner"></span></a></body></html>

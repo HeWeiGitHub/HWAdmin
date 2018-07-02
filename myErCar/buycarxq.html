@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>二手车</title>
+		
+		<script src="js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="js/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<script src="js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+		<!--
+        	<link rel="stylesheet" href="glyphicons/css/glyphicons.css" />
+        -->
+        
+        <!--引入awesome字体图标-->
+		<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" />
+		
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		
+		<script src="js/map/map.js"></script>
+		
+		<!--
+			js拾色器
+        	<script src="js/alloydesigner.js"></script>
+        -->
+		
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+			var playTime=1000;
+			var imgMainOpacity=0;
+			var imgStr=new Array();
+			//var imgControl=$("span[id^='img_']");
+			var img_right=$("#img_right");
+			var img_left=$("#img_left");
+			var imgMain=$("#imgMain");
+			var imgArry=$("img[name='imgs']");
+			var imgScroll=$("#imgScroll");
+			
+			var timer;
+			var index=-1;
+			
+			
+			imgStr[0]="car/car1.jpg";
+			imgStr[1]="car/car2.jpg";
+			imgStr[2]="car/car3.jpg";
+			imgStr[3]="car/car4.jpg";
+			imgStr[4]="car/car5.jpg";
+			imgStr[5]="car/car6.jpg";
+			imgStr[6]="car/car7.jpg";
+			imgStr[7]="car/car8.jpg";
+			imgStr[8]="car/car9.jpg";
+			imgStr[9]="car/car10.jpg";
+	
+			/**
+			 * 跳转到imgArry图片数组的标号为index的图片
+			 * @param {Object} imgArry
+			 * @param {int} index
+			 */
+			function imgTo(imgArry,index)
+			{				
+				imgMain.attr("src",imgStr[index]);
+				
+				imgAnimation(imgArry,imgArry.eq(index));
+				
+//				主图切换动画
+//				imgMain.toggle(playTime);
+								
+			}
+			
+			/**
+			 * 图片列显示图片动画
+			 * @param {Element[]} imgArry
+			 * @param {Element} item
+			 */
+			function imgAnimation(imgArry,item)
+			{
+//				imgMain.hide();				
+				imgArry.removeClass("imgActive");
+				imgArry.attr({height:"90%",width:"6%"});
+				item.addClass("imgActive");
+				item.attr({height:"100%",width:"9%"});
+//				imgMain.show(500);
+				
+			}
+			
+			/**
+			 * 播放图片
+			 * 如果isOrder为true则从左向右播放，为false则从右向左
+			 * @param {Boolean} isOrder
+			 */
+			function play(isOrder)
+			{
+				if(true==isOrder)
+				{
+					index++;
+					if(index==imgStr.length){index=0;}
+					imgTo(imgArry,index);				
+				}
+				if(false==isOrder)
+				{
+					index--;
+					if(index==-1){index=imgStr.length-1;}
+					imgTo(imgArry,index);
+				}
+
+/*****************imgMain的图像显示渐变****************************/	
+//				if(0==imgMainOpacity)
+//				{
+//					imgMain.css("opacity","0");
+//					imgMainOpacity=1;
+//				}
+//				else if(1==imgMainOpacity)
+//				{
+//					imgMain.css("opacity","1");
+//					imgMainOpacity=0;
+//				}
+				
+			}
+			/**
+			 * 初始化函数
+			 */
+			function init()
+			{
+				//添加imgMain的渐变样式
+				imgMain.addClass("imgTransition");
+				
+				imgScroll.bind("mouseenter",function()
+				{
+					clearInterval(timer);
+				});
+				
+				imgScroll.bind("mouseleave",function()
+				{
+					timer=setInterval(function(){play(true);},playTime);
+				});
+				
+				
+				
+				img_right.bind("click",function(){play(true);});
+				img_left.bind("click",function(){play(false);});
+				
+				imgArry.bind("mouseover",function(event)
+				{
+					imgAnimation(imgArry,$(event.target));
+					imgMain.attr("src",event.target.src);
+				});
+				
+//				imgMain.bind("c",function(event)
+//				{
+//					imgMain.toggle(500);
+//					alert("change");
+//				});
+				
+				timer=window.setInterval(function(){play(true);},playTime);
+			}
+			
+			document.onload=init();
+		});
+		</script>
+	</head>
+	<body>
+		
+	<center>
+	<div id="main">
+		
+		<!--
+        	<iframe id="headfram" scrolling="no" frameborder="0" width="1080px" height="118px" src="head.html" marginheight="0"></iframe>
+        -->
+		
+		
+		<div style="height: 236px;width: 1080px;position: relative;" class="mt5">
+			
+			<div style="height: 65px;width: 1080px;">
+				<ul >
+					<li class="fleft"><a href="#" class="me" style="color: rgb(0,0,0);">首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+					<li class="fleft"><a href="#" class="me" style="color: rgb(0,0,0);">我要买车</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+					<li class="fleft"><a href="#" class="me" style="color: rgb(0,0,0);">成都二手宝马</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+					<li class="fleft"><a href="#" class="me" style="color: rgb(0,0,0);">成都二手宝马3系</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+					<li class="fleft"><a href="#" class="me" style="color: rgb(0,0,0);">宝马2014年款 320Li 2.0T 手自一体 时尚型</a></li>
+				</ul>
+				<font class="fright" style="color: rgb(0,0,0);">发布时间：<time>2016-7-5</time></font>
+				
+				<big class="fleft mt5" style="color: rgb(0,0,0);">宝马2014年款 320Li 2.0T 手自一体 时尚型</big>
+				
+			</div>
+			
+			<div style="height: 65px;width: 925px;background-color: rgb(246,246,246);">
+				<span class="fleft"><font color="red" style="font-size: xx-large;font-weight: 600;line-height: 65px;">¥25.60<sup><font style="font-size: x-small;">万</font></sup></font></span>
+				<span style="font-size: x-small;margin-top: 20px;" class="fleft ml10">
+					分期付款：<font style="color: red;">最低首付10.24万，月供5035元</font><br/>
+					新车落地价：38.95万（含置购税3.07万）
+				</span>
+				<span><a href="#" style="width: 75px;height: 25px;margin-left: 13px;margin-top:20px;" class="borderblue2 me fleft">降价通知</a></span>
+				<span><a href="#" style="width: 75px;height: 25px;margin-left: 13px;margin-top:20px;color: red;" onmouseenter="this.style.color='#cc0000'" onmouseleave="this.style.color='red'" class="borderred2 me fleft">降价通知</a></span>
+				<span class="fright"><a href="#" style="color: rgb(0,0,0);display: block;text-decoration: none; margin-top: 20px;margin-right: 50px;"> <img src="img/phone4.png"/>		400-000-000</a></span>
+			</div>
+			
+			<div style="height: 100px;width: 850px;">
+				<div style="width: 117px;height: 80px;display: table;border-left: 1px solid rgb(0,0,0);border-right: 1px solid rgb(0,0,0); " class="fleft mt10">
+					<span style="display: table-cell;vertical-align: middle;">
+					<h3>2014-2</h3>
+					<p>上牌时间</p>
+					</span>
+				</div>
+				<div style="width: 117px;height: 80px;display: table; border-right: 1px solid rgb(0,0,0); " class="fleft mt10">
+					<span style="display: table-cell;vertical-align: middle;">
+					<h3>3.6万公里</h3>
+					<p>里程</p>
+					</span>
+				</div>
+				<div style="width: 117px;height: 80px;display: table; border-right: 1px solid rgb(0,0,0); " class="fleft mt10">
+					<span style="display: table-cell;vertical-align: middle;">
+					<h3>成都</h3>
+					<p>上牌地</p>
+					</span>
+				</div>
+				<div style="width: 117px;height: 80px;display: table;border-right: 1px solid rgb(0,0,0); " class="fleft mt10">
+					<span style="display: table-cell;vertical-align: middle;">
+					<h3>国5</h3>
+					<p>排放标准</p>
+					</span>
+				</div>
+				<div style="width: 117px;height: 80px;display: table;border-right: 1px solid rgb(0,0,0); " class="fleft mt10">
+					<span style="display: table-cell;vertical-align: middle;">
+					<h3>自动</h3>
+					<p>变速箱</p>
+					</span>
+				</div>
+				<div style="width: 260px;height: 100px;" class="fleft">
+					<div  class="mt10" style="width: 150px;height: 35px;line-height:35px;">
+						<a href="#" class="button" >预约看车</a>
+					</div>
+					<div style="width: 150px;height: 35px;line-height:35px;" class="mt5" >
+						<a href="#" class="button" style="background-color: red;" onmouseenter="this.style.backgroundColor='#cc0000';" onmouseleave="this.style.backgroundColor='red';">¥&nbsp;&nbsp;&nbsp;砍&nbsp;价</a></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="imgScroll" style="height: 610px;width: 1080px;position: relative;">
+			<div style="height: 90%;width: inherit;">
+				<img id="imgMain" style="height: 100%;width: inherit;opacity: 1;" src="car/car1.jpg"/>
+			</div>
+			<div style="height: 10%;width: inherit;">
+				<span id="img_left" style="height: 100%;width: 10%;line-height:100%;color: rgb(255,255,255);" class="fleft">
+					<!--awesome字体图标的使用-->
+					<i style="display: table-cell;vertical-align: middle;" class="fa fa-angle-left fa-4x"></i>
+				</span>
+				<span style="width: 80%;" class="fleft">
+				<img name="imgs" src="car/car1.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car2.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car3.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car4.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car5.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car6.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car7.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car8.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car9.jpg" height="90%" width="8%" class="imgInactive"/>
+				<img name="imgs" src="car/car10.jpg" height="90%" width="8%" class="imgInactive"/>
+				</span>
+				<span id="img_right" style="height: 100%;width: 10%;line-height:100%;color: rgb(255,255,255);display: table;" class="fright">
+					<i style="display: table-cell;vertical-align: middle;" class="fa fa-angle-right fa-4x"></i>
+				</span>
+			</div>
+		</div>
+		
+		<!--
+        	<iframe id="bottomfram" height="327px" width="1080px" src="foot.html" frameborder="0" scrolling="no"></iframe>
+        	<iframe id="helpright" height="260px" width="52px" src="helpright.html" frameborder="0" scrolling="no" style="position: fixed;right: 19px;top: 500px;"></iframe>
+        -->
+		
+		
+		
+		
+	</div>
+	</center>
+	</body>
+</html>

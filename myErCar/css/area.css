@@ -1,0 +1,44 @@
+@charset "utf-8";
+*{margin:0px;padding:0px;list-style-type:none;}
+img{border:0;}
+a{text-decoration:none;}
+
+.ico{background:url(../img/ico.png) no-repeat;_background:url(../img/ico.gif) no-repeat;}
+
+.areashowPic{width:71px;line-height:30px;color:#656565;cursor:pointer;}
+.areashowPic .i-qrcode{background:url(../images/ico.png) -48px 0px no-repeat;display:inline;float:left;height:12px;margin-top:9px;margin-right:5px;width:12px;}
+.areashowPic .wx_box{background:url(../images/ico.png) no-repeat -43px -15px #fff;border:1px solid #ddd;box-shadow:0 0 10px rgba(0, 0, 0, 0.12);height:84px;left:-15px;position:absolute;top:28px;width:84px;display:none;}
+.areashowPic-hover .wx_box{display:block;}
+.areashowPic .wx_box .arrow{height:16px;left:50%;margin-left:-8px;position:absolute;top:-16px;width:16px;}
+.areashowPic .wx_box .arrow i{border-style:dashed dashed solid;border-width:8px;height:0;left:0;overflow:hidden;position:absolute;top:0;width:0;}
+.areashowPic .wx_box i.layer1{border-color:transparent transparent #ddd;top:-1px;}
+.areashowPic .wx_box i.layer2{border-color:transparent transparent #fff;}
+.dropdown{float:left;height:30px;padding-left:20px;position:relative;z-index:20;}
+.dropdown-main{height:30px;float:left;position:relative;z-index:20;color:#666666;}
+.dropdown-main i.helper-sprite-menu{float:left;margin-top:10px;margin-right:3px;background-position:-91px -109px;width:14px;overflow:hidden;height:10px;line-height:10px;}
+.dropdown-main span{font-family:Arial;line-height:30px;float:left;margin-right:3px;}
+.dropdown-main .helper-sprite-dropdown{-webkit-transition:300ms;transition:300ms;}
+.helper-sprite-dropdown{float:left;margin-top:11px;overflow:hidden;background-position:-64px -111px;width:9px;height:7px;}
+.dropdown-main_after{-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background:none repeat scroll 0 0 white;border:1px solid #e1e1e1;border-bottom:0px solid #e1e1e1;box-sizing:content-box;height:28px;left:9px;padding:0 10px;position:absolute;top:-5px;visibility:hidden;width:80px;z-index:1;}
+.dropdown-sub{position:absolute;background-color:white;left:0;top:20px;visibility:hidden;opacity:0;-webkit-transform:scale(0.8);-ms-transform:scale(0.8);transform:scale(0.8);-webkit-transition:300ms;transition:300ms;-webkit-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0;z-index:0;}
+.dropdown-sub a{margin-left:0;display:inline;}
+.dropdown-hover .dropdown-main_after{visibility:visible;}
+.dropdown:hover .dropdown-main .helper-sprite-dropdown{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);}
+.dropdown-hover .dropdown-sub{visibility:visible;opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}
+.dropdown-sub_box{Z-INDEX:0;RIGHT:-451px;BACKGROUND:#fff;BORDER:#DADADA 1px solid;POSITION:absolute;WIDTH:420px;TOP:3px;padding:10px;}
+.menu_links2016{height:58px;}
+.menu_links2016 a:last-child img{margin-right:0;}
+.menu_links2016 img{float:left;margin-right:14px;}
+.menu_nav2016 p{height:46px;line-height:39px;border-bottom:1px solid #EFEFEF;font-size:18px;padding-left:24px;background:url(../img/ico1.png) -174px -1px no-repeat;color:#E0CABF;margin:0;}
+.menu_nav2016 p:last-child{border-bottom:none;}
+.menu_nav2016 p a{line-height:12px;color:#818183;border-left:1px solid #E0CABF;padding:0 6px;font-family:"Microsoft Yahei";}
+.menu_nav2016 p a:hover{text-decoration:underline;}
+.menu_nav2016 p span{line-height:39px;}
+.menu_nav2016 p span a{color:#FF3900;line-height:39px;font-size:18px;border-left:none;}
+.menu_nav2016 p.menu_nav2016_p2{background-position:-174px -39px;}
+.menu_nav2016 p.menu_nav2016_p3{background-position:-174px -80px;}
+.menu_nav2016 p.menu_nav2016_p4{background-position:-174px -120px;}
+.menu_nav2016 p.menu_nav2016_p5{background-position:-174px -160px;}
+.menu_nav2016 p.menu_nav2016_p6{background-position:-174px -200px;}
+.menu_nav2016 p.menu_nav2016_p7{background-position:-174px -240px;}
+.menu_nav2016 p.menu_nav2016_p8{background-position:-174px -280px;}

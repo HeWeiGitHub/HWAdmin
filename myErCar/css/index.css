@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+@import url("base.css");
+@import url("common.css");
+
+
+
+
+#top
+{
+	margin-left: auto;
+	margin-right: auto;
+	height: 80px;
+	width:1080px;
+}
+
+
+#top_logo
+{
+	float: left;
+	width: 19%;
+	height: 80px;
+}
+
+#top_location
+{
+	float: left;
+	width:10%;
+	height: 80px;
+}
+
+#top_location select
+{
+	margin-top: 28px;
+	height: 25px;
+	width: 80px;
+	border-radius: 2px;
+}
+
+#top_search
+{
+	float: left;
+	width:40%;
+	height: 80px;
+}
+
+
+#top_search input[type="text"]
+{
+	float: left;
+	margin-top: 25px;
+	height: 33px;
+	width: 80%;
+	border-radius: 2px;
+}
+
+#top_search input[type="submit"]
+{
+	float: left;
+	margin-top: 24px;
+	height: 35px;
+	width: 17%;
+	border-radius: 2px;
+}
+
+
+#top_user
+{
+	float: left;
+	width:29%;
+	height: 80px;
+}
+
+#top_user img
+{
+	width: 20%;
+	height: 40px;
+	margin-top: 25px;
+	float: left;
+}
+
+#top_user a
+{
+	height: 40px;
+	display: block;
+	margin-top: 35px;
+	float: left;
+}
+
+div[id="top_user"]>a:nth-child(1){width: 6%;}
+div[id="top_user"]>a:nth-child(2){width: 20%;}
+
+#titleBar
+{
+	clear: both;
+	height: 50px;
+	background-color: rgb(0,153,255);
+	width: auto;
+}
+
+.titleBar_main
+{
+	width: 1080px;margin-left: auto;margin-right: auto;
+}
+
+.nav_ul
+{
+	width: 800px;
+	float: left;
+}
+
+.nav_ul li
+{
+	float: left;
+}
+.nav_ul li a.me
+{
+	width: 80px;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
+
+.nav_ul li a:hover{background-color:rgb(0,122,204);}
+
+.nav_ul  .current {color:#33ffcc;background-color:rgb(0,122,204);}
+
+
+.title_phone
+{
+	padding-top: 10px;
+	width: 250px;
+	height: 50px;
+	float: right;
+}
+
+.title_phone img{width: 23px;height: 20px;margin-top: 5px;}
+.title_phone input[type="text"]{width: 55%;height: 30px;}
+.title_phone input[type="button"]{width: 65px;border:1px solid white;height: 30px;}
+
+#scroll
+{
+	height: 370px;
+	width: 1080px;
+}
+
+#selectType
+{
+	height: 230px;
+}
+
+.selectType_Top
+{
+	height: 63px;
+}
+
+.selectType_Top a{display:block;}
+
+.selectType_Box
+{
+	width: 32%;
+	height: 157px;
+}
+.typeBox_tableImg
+{
+	height: 50px;
+	width: 50px;
+}
+
+#getPhone
+{
+	height: 160px;
+}
+
+.getPhone_Box
+{
+	width: 539px;
+	height: 189px;
+	float: left;
+}
+
+.getPhone_Boxl
+{
+	margin-top: 20px;
+	width: 160px;
+	height: 190px;
+	float: left;
+}
+
+.getPhone_Boxr
+{
+	width: 370px;
+	height: 190px;
+	float: left;
+}
+
+#zhanShi
+{
+	height: 170px;
+}
+
+
+#xiangxi
+{
+	height: 670px;
+}
+
+.xiangxi_nav
+{
+	height: 68px;
+}
+.xiangxi_Box
+{
+	height: 570px;
+}
+
+#bottom
+{
+	height: 327px;
+
+//	border: 1px solid blue;
+}
+
+.bottom_head
+{
+	height: 79px;
+}
+
+.bottom_content
+{
+	height: 132px;
+}

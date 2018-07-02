@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+@font-face
+{
+	/*font-family: "微软雅黑";*/
+	font-family: "wryh";
+	src: url(../font/微软雅黑.ttf);
+	font-style: normal;
+}
+
+.fontLg1_5x
+{
+	font-size: 1.5em;
+}
+
+/*a后面加.me解决和其他引入样式冲突,引用形式为<a class="me"></a>，另外注意a的四种样式顺序*/
+a.me:link,a.me:visited { text-decoration:none; color: rgb(0,153,255);} 
+
+a.me:hover,a.me:active
+{ 
+	text-decoration:none;
+	color:rgb(0,122,204);
+} 
+
+a.button{display: block;color: white;background-color: rgb(0,153,255);}
+a.button:link,a.button:visited { text-decoration:none; background-color: rgb(0,153,255);} 
+
+a.button:hover,a.button:active,a.button:focus
+{
+	text-decoration:none;
+	color:white;
+	background-color: rgb(0,122,204);
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,iframe,*{margin:0;padding:0;font-family: "wryh","微软雅黑";}
+
+ol,ul{list-style:none}
+
+h1.meh,h2.meh,h3.meh,h4.meh,h5 .meh,h6.meh
+{
+	font-weight:normal;
+	color: #F54766;
+}
+
+
+abbr,acronym { border:0}
+input,select{vertical-align:middle;}
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="file"] > input[type="button"]{border:none;padding:0;background-color: rgb(0,153,255);color:white;}
+input[type="submit"]:hover{background-color:rgb(0,122,204);color:white;}
+
+.mt10{margin-top: 10px;}
+.mt5{margin-top: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb5{margin-bottom:5px;}
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+
+.pt10{margin-top: 10px;}
+.pt5{margin-top: 5px;}
+.pb10{margin-bottom: 10px;}
+.pb5{margin-bottom:5px;}
+.pl5{margin-left: 5px;}
+.pl10{margin-left: 10px;}
+.pr5{margin-right: 5px;}
+.pr10{margin-right: 10px;}
+
+.fright{float:right;}
+.fleft{float: left;}
+.clearB{clear: both;}
+
+.bradius2{border-radius: 2px;}
+.bradius3{border-radius: 3px;}
+.bradius4{border-radius: 4px;}
+.bradius5{border-radius: 5px;}
+
+.borderyellow1{border: 1px solid #E66F03;}
+.borderyellow3{border: 3px solid #E66F03;}
+.borderblue1{border: 1px solid rgb(0,153,255);}
+.borderblue2{border: 2px solid rgb(0,153,255);}
+.borderblue3{border: 3px solid rgb(0,153,255);}
+.borderred1{border: 1px solid red;}
+.borderred2{border: 2px solid red;}
+.borderred3{border: 3px solid red;}
+.borderwhite1{border: 1px solid white;}
+.borderwhite3{border: 3px solid white;}
+
+.fwhiteBlod
+{
+	color: white;
+	font-weight:bold;
+}
+
+.fredBlod
+{
+	color: #990066;
+	font-weight: blod;
+}
+
+.fblueBlod
+{
+	/*color: #0882C5;*/
+	color: rgb(0,153,255);
+	font-weight: blod;
+}
+
+.bgBlue{background-color: rgb(0,153,255);}
+.bgRed{background-color:#990066}
+.bgYellow{background-color: #ff9933;}
+.bgGrey{background-color: rgba(1,1,1,0.1);}

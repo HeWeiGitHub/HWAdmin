@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>二手车</title>
+		
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/vipperson.css" />
+		<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css" />
+		<script src="js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="js/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<script src="js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+		
+		<!--
+			js拾色器
+        	<script src="js/alloydesigner.js"></script>
+        -->
+		<script type="text/javascript">
+		//获取iframe所包含网页的尺寸，然后设置iframe的尺寸显示到主页中
+			function myload()
+			{
+				try
+				{
+					var contentF=document.getElementById("personfram");
+					var contentFdom=contentF.contentWindow.document;
+					
+					var contentCH=contentFdom.body.clientHeight;
+					//var contentdH=contentFdom.documentElement.scrollHeight;
+					//var contentSH=contentFdom.body.scrollHeight;
+					//var height=Math.max(contentCH,contentSH);
+					//contentF.height=height;
+					contentF.height=contentCH+5;
+					//contentF.setAttribute("height",contentH);
+				}
+				catch(ex){}
+				
+			}
+		</script>
+		<!--<script>
+		function myload()
+		{
+		    var ifm= document.getElementById("personfram"); 
+		    ifm.height=document.documentElement.clientHeight;
+		}
+		window.onresize=function()
+		{
+			myload();  
+		} 
+		</script>-->
+	</head>
+	<body>
+		
+	<center>
+	<div id="main">
+		
+		<div style="height: 40px;line-height: 40px;">
+			<div style="margin-left: 40px;" class="fleft">
+				<a href="#" class="me">网站首页</a>&nbsp;&nbsp;
+				<a href="#" class="me">收藏本站</a>
+			</div>
+			<div style="margin-right: 40px;width: 250px;float: right;">
+				<a href="#" class="me">登录</a>&nbsp;&nbsp;
+				<a href="#" class="me">注册</a>
+				<img src="img/forum/qq.png" />
+				<img src="img/forum/weixin.png" />
+				<img src="img/forum/weibo.png" />
+			</div>
+		</div>
+		
+		<div id="person_nav">
+			<img id="logo" src="img/logo.png" class="fleft"/>
+			<div class="nav_items">
+				<a href="#" class="fontBload">个人中心</a>
+				<a href="#">账户设置<i class="fa fa-angle-down"></i></a>
+				<a href="#">我的资金</a>
+			</div>
+			<a id="notify" class="button" href="#">发布信息</a>
+			<div id="nav_search" class="fright">
+					<input type="text" class="fleft" placeholder="搜索"/>
+					<button><i class="fa fa-search"></i></button>
+			</div>
+			
+		</div>
+		<div id="top_bar">
+			
+			<ul>
+				<li style="font-weight: bold;">当前位置：</li>
+				<li><a style="color: black;">首页></a></li>
+			</ul>
+		</div>
+		<iframe id="personfram" name="personfram" height="100%" width="100%" scrolling="no" frameborder="0" framespacing="0" src="personal.html" onload="myload()"></iframe>
+		<iframe id="bottomfram" height="327px" width="1080px" src="foot.html" frameborder="0" scrolling="no"></iframe>
+		
+	</div>
+	</center>
+	</body>
+</html>

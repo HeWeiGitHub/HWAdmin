@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>二手车</title>
+		
+		
+		<!--
+        	<link rel="stylesheet" href="css/base.css" />
+			<link rel="stylesheet" href="css/common.css" />
+        -->
+		
+		
+		<!--
+			<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		
+        	<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+			<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        -->
+		
+		<script src="js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="js/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<script src="js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+		<script src="js/myarea.js"></script>
+		<link rel="stylesheet" href="css/myarea.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		
+		<!--
+			js拾色器
+        	<script src="js/alloydesigner.js"></script>
+        -->
+		
+		<script>
+			//设置按钮的鼠标经过特效
+			$(function()
+			{
+				var searbut;
+				//searbut=$("input[type='submit']");
+				$("input[type='submit']").bind("mousemove",function(event)
+				{
+					$("this").addClass("btnactivbg");
+				});
+				
+			})
+		</script>
+		
+		<script type="text/javascript">
+		//设置导航栏超链接的点击效果
+			$(
+				function()
+				{
+					//$("#titleBar a:first").state("active");
+					//$("#titleBar a:first").attr("autofocus","ture");
+					//$("#titleBar a:first").setActive();
+					$("#titleBar a").bind("click",function(){
+						$("#titleBar a").removeClass("current");
+						$(this).addClass("current");
+					})
+				}
+			)
+		</script>
+		
+		<script type="text/javascript">
+		//通过jquery控制div加载中间内容页，并且给导航栏添加点击加载效果
+			$(document).ready(function()
+			{
+				var navlink=$(".nav_ul a");
+				var comments=$(".nav_ul a:eq(5)");
+				var indexcontent=$("#indexcontent");
+				 
+				function myload()
+				{
+					indexcontent.load("indexcontent.html");
+					navlink.bind("click",function(event)
+					{
+						//var navhref=$("this").attr("href");
+						var navhref=$(event.target).attr("href");
+						if("comment.html"==navhref)
+						{
+							
+						}
+						else
+						{
+							event.preventDefault();
+							//alert(navhref);
+							indexcontent.load(navhref);
+						}						
+					});
+				}
+				document.onload=myload();
+			});
+		</script>
+
+	</head>
+	<body>
+		
+	<center>
+	
+		
+		<!--
+        	<iframe id="headfram" scrolling="no" frameborder="0" width="1080px" height="118px" src="head.html" marginheight="0"></iframe>
+        -->
+		
+		
+		<div id="top">
+			<form id="topForm">
+				<div id="top_logo"><img src="img/logo.bmp" height="80px"/></div>
+				<div id="top_location">
+					<center>
+					
+					<div class="area" style="margin-top: 25px;">
+						<!--<option>全国</option>-->
+						全国
+						<div class="area_list">
+							<div class="area_items">
+								<span class="item_title"><a href="#">宁夏</a></span>
+								<span class="area_item"><a href="#">银川</a></span>
+								<span class="area_item"><a href="#">石嘴山</a></span>
+								<span class="area_item"><a href="#">兴庆区</a></span>
+								<span class="area_item"><a href="#">新城区</a></span>
+							</div>
+							<div class="area_items">
+								<span class="item_title"><a href="#">陕西</a></span>
+								<span class="area_item"><a href="#">西夏区</a></span>
+								<span class="area_item"><a href="#">金凤区</a></span>
+								<span class="area_item"><a href="#">兴庆区</a></span>
+								<span class="area_item"><a href="#">新城区</a></span>
+							</div>
+							<div class="area_items">
+								<span class="item_title"><a href="#">甘肃</a></span>
+								<span class="area_item"><a href="#">西夏区</a></span>
+								<span class="area_item"><a href="#">金凤区</a></span>
+								<span class="area_item"><a href="#">兴庆区</a></span>
+								<span class="area_item"><a href="#">新城区</a></span>
+							</div>
+							<div class="area_items">
+								<span class="item_title"><a href="#">青海</a></span>
+								<span class="area_item"><a href="#">西夏区</a></span>
+								<span class="area_item"><a href="#">金凤区</a></span>
+								<span class="area_item"><a href="#">兴庆区</a></span>
+								<span class="area_item"><a href="#">新城区</a></span>
+							</div>
+						</div>
+					</div>
+					<!--
+					<span id="area"><font style="font-family: '微软雅黑';">选择城市</font><img src=""/></span>
+					-->
+					</center>
+				</div>
+				<div id="top_search">
+					<input type="text" placeholder="请输入品牌或型号，如奥迪A6L"/>
+					<input type="submit" value="搜索" class="fwhiteBlod"/>
+				</div>
+				<div id="top_user">
+					<!--
+                    	
+                    
+					<span class="glyphicon glyphicon-user fleft"></span>
+					-->
+					<img src="img/person2.png" />
+					<a href="login.html" class="me" style="color: rgb(0,0,0);">登录</a>
+					<img src="img/phone2.png" style="display: block;border-left: 1px solid rgb(0,0,0);"/>
+					<a href="phone.html" class="me fblueBlod">900-000-000</a>
+				</div>
+			</form>
+		</div>
+		
+		<div id="titleBar">
+			<div class="titleBar_main">
+				<ul class="nav_ul">
+					<li><a href="indexcontent.html" class="me current">首页</a></li>
+					<li><a href="buycar.html" class="me">买车</a></li>
+					<li><a href="buyoutcar.html" class="me">卖车</a></li>
+					<li><a href="buycar.html" class="me">置换</a></li>
+					<li><a href="daikuan.html" class="me">贷款购车</a></li>
+					<li><a href="comment.html" target="_blank" class="me">论坛</a></li>
+					<li><a href="shop.html" class="me">商城</a></li>
+					<li><a href="fuwubaozhang.html" class="me">服务保障</a></li>
+					<li><a href="buycar.html" class="me">下载APP</a></li>
+				</ul>
+				<div class="title_phone">
+					<img src="img/phone3.png" class="fleft"/>
+					<input type="text" placeholder="填写手机号码，座机加区号" class="fleft"/>
+					<input type="button" class="fleft bradius3 fwhiteBlod ml5" onclick="" value="免费通话" />
+				</div>
+			
+			</div>
+		</div>
+
+	<div id="main">
+		
+		<div id="indexcontent" class="clearB" style="padding: 0px;"></div>
+		
+		
+		<iframe id="bottomfram" height="327px" width="1080px" src="foot.html" frameborder="0" scrolling="no"></iframe>
+		
+		<iframe id="helpright" height="260px" width="52px" src="helpright.html" frameborder="0" scrolling="no" style="position: fixed;right: 19px;top: 500px;"></iframe>
+		
+	</div>
+	</center>
+	
+	</body>
+</html>

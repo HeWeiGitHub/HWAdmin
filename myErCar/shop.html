@@ -1,0 +1,271 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>二手车</title>		
+		<link href="css/index.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/shop.css" />
+		<script src="js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="js/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<script src="js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+		<!--
+			js拾色器
+        	<script src="js/alloydesigner.js"></script>
+        -->
+		<script type="text/javascript">
+			$(
+				function()
+				{
+					$("#titleBar a").bind("click",function(){
+						$("#titleBar a").removeClass("shopcurrent");
+						$(this).addClass("shopcurrent");
+					})
+				}
+			)	
+		</script>	
+	</head>
+	<body>	
+	<center>
+	<div id="main">		
+		<div style="height: 332px;background-image: url(img/shop/shopcar.bmp);"></div>
+		
+		<div id="titleBar" style="border-bottom: 2px solid rgb(0,122,204);background-color: white;margin-top: 40px;">
+			<ul class="shop_nav_ul">
+				<li><a class="pl10 shopcurrent" href="#">全部商品分类</a></li>
+				<li><a class="pl10 "  href="#">全部品牌</a></li>
+				<li><a class="pl10"  href="#">全部商品</a></li>
+				
+			</ul>
+		</div>
+		
+		<div id="shoptype" style="height: 42px;" class="mt10">
+			<div><a class="button">汽车养护美容</a></div>
+			<div><a class="button">汽车养护美容</a></div>
+			<div><a class="button">汽车养护美容</a></div>
+			<div><a class="button">汽车养护美容</a></div>
+			<div><a class="button">汽车养护美容</a></div>
+			<div><a class="button">汽车养护美容</a></div>
+			<div><a class="button">汽车养护美容</a></div>
+			<div><a class="button">汽车养护美容</a></div>
+		</div>
+		
+		<div style="height: 120px;">
+			
+			<div style="height: 95px;border: 1px solid grey;" class="mt10">
+				
+				<div style="width: 95px;height: 95px;background-color:rgba(1,1,1,0.1);" class="fleft">品牌</div>
+				
+				<div style="height: 95px" class="ml10 fleft">
+					<table border="1" bordercolor="darkgray" cellpadding="0" cellspacing="0" height="89px" width="860px" style="margin-top: 2px;">
+						<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+					</table>
+					
+				</div>
+				
+				<div class="fleft ml10">
+					<span class="glyphicon glyphicon-plus"><a class="me" href="#">多选</a> </span>
+					<span class="glyphicon glyphicon-chevron-down"><a class="me" href="#">更多</a></span>
+					</div>
+			</div>
+			<div style="height: 25px;border: 1px solid darkgray;">
+				<div style="width: 95px;height: 25px;background-color:rgba(1,1,1,0.1);" class="fleft">
+					<span class="glyphicon glyphicon-chevron-right">分类</span>
+				</div>
+				<div style="height: 25px; width: 970px;" class="fleft ">
+					<ul>
+							<li class=" fleft ml10" style="margin-left: 50px;"><a class="me" href="#" style="width: 120px;">易损保养件</a></li>
+							<li class=" fleft ml10" style="margin-left: 50px;"><a class="me" href="#" style="width: 120px;">易损保养件</a></li>
+							<li class=" fleft ml10" style="margin-left: 50px;"><a class="me" href="#" style="width: 120px;">易损保养件</a></li>
+							<li class=" fleft ml10" style="margin-left: 50px;"><a class="me" href="#" style="width: 120px;">易损保养件</a></li>
+							<li class=" fleft ml10" style="margin-left: 50px;"><a class="me" href="#" style="width: 120px;">易损保养件</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div style="height: 33px; margin-top: 40px;">
+				<table border="1px" cellspacing="0" cellpadding="0" width="800px" height="30px" style="float: left;">
+					<tr>
+						<td width="50" align="center"><a class="button" href="#" style="height: 30px;width: 50px;line-height: 30px;">综合<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></a></td>
+						<td width="50" align="center"><a class="button" href="#" style="height: 30px;width: 50px;line-height: 30px;">人气<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></a></td>
+						<td width="50" align="center"><a class="button" href="#" style="height: 30px;width: 50px;line-height: 30px;">新品<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></a></td>
+						<td width="50" align="center"><a class="button" href="#" style="height: 30px;width: 50px;line-height: 30px;">销量<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></a></td>
+						<td width="50" align="center"><a class="button" href="#" style="height: 30px;width: 60px;line-height: 30px;">价格<span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span></a></td>
+						<td width="50" align="center" colspan="2">
+							<div style="width: 150px;">收货地: <span><select><option>请选择</option></select></span></div>
+						</td>
+						<td align="center" colspan="2">
+							<div  style="width: 150px;">
+								<input type="text" placeholder="¥请输入" style="width: 60px;" />—<input type="text" placeholder="¥请输入" style="width: 60px;" />
+							</div>
+						</td>
+						<td align="center" colspan="5">
+							<div style="width: 180px;">
+									<span>包邮<input type="checkbox" id=""/> &nbsp;&nbsp;折扣<input type="checkbox" id="" /></span>&nbsp;&nbsp;<a href="#" class="me"><i class="glyphicon glyphicon-chevron-down">更多</i></a>
+							</div>
+						</td>
+					</tr>
+				</table>
+		</div>
+		
+		<div style="margin-top: 20px;">
+			
+				<table border="0px" cellspacing="0px" cellpadding="0px" height="261px" width="1080px">
+				
+					<tr>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+					</tr>
+					
+					
+					<tr>
+						<td height="120px">
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+						<td>
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+						<td>
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+						<td>
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+					</tr>
+				</table>
+				
+		</div>
+		
+		<div style="margin-top: 40px;margin-bottom: 60px;">
+				<center>
+				<form action="" method="post">
+				<table cellpadding="0" cellspacing="0" border="1px" height="35">
+					
+					<tr>
+						<td ><a class="button" href="#" style="height: 35px;width: auto;line-height: 35px;"><<上一页</a></td>
+						<td width="25" align="center"><a class="me" style="display: block; height: 35px; width: 25px;line-height: 35px;">1</a></td>
+						<td width="25" align="center"><a class="me" style="display: block; height: 35px; width: 25px;line-height: 35px;">2</a></td>
+						<td width="25" align="center"><a class="me" style="display: block; height: 35px; width: 25px;line-height: 35px;">3</a></td>
+						<td width="25" align="center"><a class="me" style="display: block; height: 35px; width: 25px;line-height: 35px; font-size:x-large;">...</a></td>
+						<td ><a class="button" href="#" style="height: 35px;width: auto;line-height: 35px;">下一页>></a></td>
+						<td width="120px" align="center" style="border: none;" bordercolor="white">
+								到第<input type="text" style="width: 25px;height: 33px;line-height:33px;display: inline;"/>页
+						</td>
+						<!--
+                        	<td><a class="button" href="#" style="height: 35px;width: 40px;line-height: 35px;text-align: center;">确定</a></td>
+                        -->
+						<td><input type="submit" value="确定" style="line-height: 35px;width: 60px;height: 35px;"/></td>
+					</tr>
+				</table>
+				</form>
+				</center>
+			</div>
+		
+		<div style="height: 40px; border:1px solid darkgray;margin-top: 30px; margin-bottom: 40px;">
+			<font style="margin-left: 0px; float: left; line-height: 40px;" class="fblueBlod ml10"> 您是不是要找？</font>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 pr10"><a href="#" class="me">车灯</a> </span>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 mr10"><a href="#" class="me">油门踏板</a> </span>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 mr10"><a href="#" class="me">飞利浦车灯</a> </span>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 mr10"><a href="#" class="me">避震</a> </span>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 mr10"><a href="#" class="me">近光灯</a> </span>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 mr10"><a href="#" class="me">汽车灯泡</a> </span>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 mr10"><a href="#" class="me">汽车防盗锁</a> </span>
+			<span style="width: 100px; line-height: 40px; border-right: 1px solid gray;" class="ml10 mr10"><a href="#" class="me">LED大灯</a> </span>			
+		</div>
+		<div  class="mt10 fredBlod" style="text-align:left;height: 40px; line-height: 40px;"> 猜你喜欢</div>
+		
+		<div class="mt5">
+			
+				<table border="0px" cellspacing="0px" cellpadding="0px" height="261px" width="1080px">
+				
+					<tr>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+						<td valign="bottom" style="background-image: url(img/xiangxicar.bmp); width: 219px;height: 141px;" class="bgImg" ><a href="#"></a></td>
+					</tr>
+					
+					
+					<tr>
+						<td height="120px">
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+						<td>
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+						<td>
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+						<td>
+							<font style="font-family: '微软雅黑';font-size: small;">标志：307 2007款 改款1.6L 手动舒适版</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">2008年5月1237公里</font></br>
+							<font style="font-family: '微软雅黑';font-size: large;" class="fblueBlod">3.80万</font></br>
+							<font style="font-family: '微软雅黑';font-size: xx-small;">新车价10.98万</font>
+							<!--
+							<a href="#"><img src="img/kanjia.bmp" style="float: right;margin-right: 20px;"/></a>
+							-->
+						</td>
+					</tr>
+				</table>
+				
+		</div>
+		<div style="height: 60px;margin-top: 60px;background-color: rgba(1,1,1,0.1);">
+			<center>
+			<div style="height: 36px; position: relative; top: 12px; width: 426px;" class="borderblue3">
+				<form id="shop_search" action="" method="post">
+					<input type="text" style="width: 290px;height: 30px;border: none;" class="fleft"/>
+					<input type="submit" value="搜索" style="width: 130px;height: 30px; " class="fleft"/>
+				</form>
+			</div>
+			</center>
+		</div>
+		<div style="height: 120px;background-image: url(img/shop/shoptesebar.png);" class="mt10"></div>	
+	</div>
+	</center>
+	</body>
+</html>
