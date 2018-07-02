@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>实验室设备管理系统--客户端</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ico/network.ico</normaloff>ico/network.ico</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>当前用户：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="uLabel">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 0);
+background-color: rgb(0, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>状态：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="statLabel">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 0);</string>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 255);
+color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>服务器时间：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdServTime"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>50</y>
+      <width>1101</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 127);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>51</y>
+       <width>1091</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>0</y>
+       <width>481</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 24pt &quot;楷体&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>数学计算机学院机房设备管理系统</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>560</y>
+      <width>1101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPlainTextEdit" name="chat">
+     <property name="geometry">
+      <rect>
+       <x>133</x>
+       <y>10</y>
+       <width>951</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sendButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>send</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>导出数据</string>
+     </property>
+     <addaction name="exportSb"/>
+     <addaction name="exportWx"/>
+     <addaction name="exportBf"/>
+    </widget>
+    <addaction name="open"/>
+    <addaction name="menu_2"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="user">
+    <property name="title">
+     <string>用户</string>
+    </property>
+    <addaction name="currentUser"/>
+    <addaction name="zhuxiao"/>
+    <addaction name="zhuce"/>
+    <addaction name="Alluser"/>
+   </widget>
+   <widget class="QMenu" name="fuwuqi">
+    <property name="title">
+     <string>服务器</string>
+    </property>
+    <addaction name="login"/>
+    <addaction name="loginout"/>
+   </widget>
+   <widget class="QMenu" name="abouts">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="about"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设备信息管理</string>
+    </property>
+    <addaction name="btnAdd"/>
+    <addaction name="btnDel"/>
+    <addaction name="btnSel"/>
+    <addaction name="btnUpdate"/>
+    <addaction name="btnSelAll"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>维修设备</string>
+    </property>
+    <addaction name="AddWx"/>
+    <addaction name="DelWx"/>
+    <addaction name="SelWx"/>
+    <addaction name="UpWx"/>
+    <addaction name="WxAll"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>报废设备</string>
+    </property>
+    <addaction name="AddBf"/>
+    <addaction name="DelBf"/>
+    <addaction name="SelBf"/>
+    <addaction name="UpBf"/>
+    <addaction name="BfAll"/>
+   </widget>
+   <addaction name="file"/>
+   <addaction name="user"/>
+   <addaction name="fuwuqi"/>
+   <addaction name="menu"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+   <addaction name="abouts"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="open">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/folder.ico</normaloff>ico/folder.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;打开文件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/Shut Down.ico</normaloff>ico/Shut Down.ico</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="currentUser">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/EYE.ICO</normaloff>ico/EYE.ICO</iconset>
+   </property>
+   <property name="text">
+    <string>当前用户</string>
+   </property>
+   <property name="toolTip">
+    <string>当前用户</string>
+   </property>
+  </action>
+  <action name="shenqing">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/cd-rom.ico</normaloff>ico/cd-rom.ico</iconset>
+   </property>
+   <property name="text">
+    <string>申请权限</string>
+   </property>
+   <property name="toolTip">
+    <string>申请权限</string>
+   </property>
+  </action>
+  <action name="zhuxiao">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/W95MBX01.ICO</normaloff>ico/W95MBX01.ICO</iconset>
+   </property>
+   <property name="text">
+    <string>用户注销</string>
+   </property>
+   <property name="toolTip">
+    <string>用户注销</string>
+   </property>
+  </action>
+  <action name="login">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/ARW06RT.ICO</normaloff>ico/ARW06RT.ICO</iconset>
+   </property>
+   <property name="text">
+    <string>用户登录</string>
+   </property>
+   <property name="toolTip">
+    <string>用户登录</string>
+   </property>
+  </action>
+  <action name="loginout">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/ARW06LT.ICO</normaloff>ico/ARW06LT.ICO</iconset>
+   </property>
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+   <property name="toolTip">
+    <string>退出登录</string>
+   </property>
+  </action>
+  <action name="help">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/Help.ico</normaloff>ico/Help.ico</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="toolTip">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/book.ico</normaloff>ico/book.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="zhuce">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/record.ico</normaloff>ico/record.ico</iconset>
+   </property>
+   <property name="text">
+    <string>用户注册</string>
+   </property>
+  </action>
+  <action name="btnAdd">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/Sadd.png</normaloff>ico/Sadd.png</iconset>
+   </property>
+   <property name="text">
+    <string>新增设备</string>
+   </property>
+  </action>
+  <action name="btnDel">
+   <property name="text">
+    <string>设备出库</string>
+   </property>
+  </action>
+  <action name="btnSel">
+   <property name="text">
+    <string>设备查询</string>
+   </property>
+  </action>
+  <action name="btnUpdate">
+   <property name="text">
+    <string>信息修改</string>
+   </property>
+  </action>
+  <action name="btnSelAll">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/allsb.png</normaloff>ico/allsb.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示全部</string>
+   </property>
+  </action>
+  <action name="AddWx">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/Wadd.png</normaloff>ico/Wadd.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加维修数据</string>
+   </property>
+  </action>
+  <action name="DelWx">
+   <property name="text">
+    <string>删除维修数据</string>
+   </property>
+  </action>
+  <action name="SelWx">
+   <property name="text">
+    <string>维修数据查询</string>
+   </property>
+  </action>
+  <action name="UpWx">
+   <property name="text">
+    <string>修改维修数据</string>
+   </property>
+  </action>
+  <action name="AddBf">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/Badd.png</normaloff>ico/Badd.png</iconset>
+   </property>
+   <property name="text">
+    <string>新增报废记录</string>
+   </property>
+  </action>
+  <action name="UpBf">
+   <property name="text">
+    <string>修改报废记录</string>
+   </property>
+  </action>
+  <action name="DelBf">
+   <property name="text">
+    <string>删除报废记录</string>
+   </property>
+  </action>
+  <action name="SelBf">
+   <property name="text">
+    <string>查询报废记录</string>
+   </property>
+  </action>
+  <action name="WxAll">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/allWx.png</normaloff>ico/allWx.png</iconset>
+   </property>
+   <property name="text">
+    <string>全部维修记录</string>
+   </property>
+  </action>
+  <action name="BfAll">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/allBf.png</normaloff>ico/allBf.png</iconset>
+   </property>
+   <property name="text">
+    <string>全部报废设备</string>
+   </property>
+  </action>
+  <action name="exportSb">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/ExSb.png</normaloff>ico/ExSb.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出设备信息</string>
+   </property>
+  </action>
+  <action name="exportWx">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/ExWx.png</normaloff>ico/ExWx.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出维修信息</string>
+   </property>
+  </action>
+  <action name="exportBf">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/ExBf.png</normaloff>ico/ExBf.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出报废信息</string>
+   </property>
+  </action>
+  <action name="Alluser">
+   <property name="icon">
+    <iconset>
+     <normaloff>ico/student.ico</normaloff>ico/student.ico</iconset>
+   </property>
+   <property name="text">
+    <string>全部用户</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

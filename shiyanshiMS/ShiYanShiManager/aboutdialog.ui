@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>476</width>
+    <height>241</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>关于</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 170, 255);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>ico/network.ico</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>20</y>
+     <width>251</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+
+&lt;h3&gt;&lt;font color=&quot;red&quot;&gt;作者相关&lt;/font&gt;&lt;/h3&gt;
+&lt;p&gt;
+&lt;font color=&quot;blue&quot;&gt;
+作者：何伟&lt;br&gt;
+电话：15509516226&lt;br&gt;
+邮箱：632690452@qq.com&lt;br&gt;
+&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;&lt;font color=&quot;red&quot;&gt;软件相关&lt;/font&gt;&lt;/h3&gt;
+&lt;p&gt;
+&lt;font color=&quot;blue&quot;&gt;
+本软件使用于小型计算机机房设备管理
+&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;head&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>200</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;div style=&quot;opacity:0.6;background-color:#225599;&quot;&gt;&lt;font color=&quot;red&quot;&gt;版权所有，侵权必究&lt;/font&gt;&lt;/div&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
